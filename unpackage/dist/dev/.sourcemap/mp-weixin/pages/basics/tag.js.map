@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///E:/程序/花鲜派/Nhxp/main.js"],"names":["Page","App"],"mappings":";;;;;;;;;;AAAA;AACA;AACI,kI;AACAA,IAAI,CAAC,+BAAYC,YAAZ,CAAD,CAAJ,C","file":"pages/basics/tag.js","sourcesContent":["import 'uni-pages';\nimport pageFactory from 'mpvue-page-factory'\n    import App from './pages/basics/tag.vue'\n    Page(pageFactory(App))"],"sourceRoot":""}

@@ -1,0 +1,218 @@
+page,
+.view-page {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.mt20 {
+  margin-top: 20rpx;
+}
+.grid .submenu {
+  width: 170rpx;
+  margin-right: 2rpx;
+  text-align: center;
+  color: #6D6D6D;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* border-right: 1px solid #eee; */
+  /* border-top: 1px solid #eee; */
+  background: #FBFBFB;
+}
+.grid .submenu:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 2rpx;
+  top: 0;
+  bottom: 0;
+  background: #DBDBDB;
+}
+.grid .submenu .submenu-item {
+  height: 100rpx;
+  border-bottom: 1px solid transparent;
+  padding: 0 20rpx;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+.grid .submenu .submenu-item.active {
+  color: #FF5454;
+  background: #fff;
+  border-bottom: 1px solid #DBDBDB;
+}
+.grid .submenu .submenu-item.active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 6rpx;
+  height: 46rpx;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ff5454;
+}
+.grid .submenu .submenu-item.active:after {
+  content: '';
+  position: absolute;
+  right: -10rpx;
+  width: 20rpx;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+}
+.grid .submenu .submenu-item ._span {
+  line-height: 100rpx;
+  display: block;
+  width: 100%;
+}
+.grid .submenu .submenu-item ._i {
+  display: none;
+  font-style: normal;
+  color: #fff;
+  background: #ff5454;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20rpx;
+  padding: 2rpx 12rpx;
+  font-size: 20rpx;
+  line-height: 25rpx;
+}
+.grid .submenu .submenu-item ._i.show {
+  display: block;
+}
+.filterbar {
+  line-height: 100rpx;
+  overflow: hidden;
+  padding-right: 30rpx;
+}
+.filterbar .filter-item {
+  float: right;
+  color: #ADADAD;
+  font-size: 26rpx;
+  margin-left: 50rpx;
+}
+.cu-dialog {
+  padding: 50rpx 30rpx 70rpx;
+  background: #fff;
+  position: relative;
+  text-align: left;
+}
+.cu-dialog .close {
+    position: absolute;
+    right: 52rpx;
+    top: 35rpx;
+    height: 44rpx;
+    width: 44rpx;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAMAAABGS8AGAAAAflBMVEUAAACqqqrMzMzV1dXGxsbMzMzMzMzT09PR0dHS0tLS0tLS0tLR0dHR0dHR0dHS0tLR0dHT09PT09PS0tLT09PR0dHS0tLT09PT09PR0dHR0dHS0tLT09PS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIogU/9AAAAKXRSTlMAAwUGCQoPeXp8gYOGi4yNkZWWmJuipayys76/ydbc3uXn6ezv8vP09uNWP0AAAAE6SURBVFjD7dTbUsJAEATQjREEFREQjChouO///6BQhJAlt96d5m36efpUKGbHGI1Go9FoSOlMdpthjE5HT4tFL4JGP+wxCShHs9P0KzR7sLh8du3aA4bkzLV7CB5bVL64dgrBj3NQzt2fLrgWmOztgnKAC8lBLiAHuq1ysNsiC9xGWeQ2yEK3Vha7NTLBrZQpboVMcksyzb2Ria4jU92izHWPlz+xTliuMXFyH9eVmW5R5rrXPbPzzn1crlx0mbLr8uTre/uiyoV3nO8GQ3buA1G+uTs0uXTPSHL8mTHf3dIblMiVCEGuIcRyLSCUG+oiubEskFuqwXJrMVAGakEyVAqQwYq3/IAWfOUXeDyXJxD8i3/GRd5C8NLj52XyBoL7Pn/IWX7Hjvvz32qEr9AgTd9io9FoNBoNKf+Gwn5SczBEKwAAAABJRU5ErkJggg==) no-repeat center center;
+    background-size: 100% auto;
+    z-index: 99;
+}
+.cu-dialog .title {
+    color: #1D1D1D;
+    font-size: 28rpx;
+}
+.cu-dialog .title + ._p {
+      color: #808080;
+      font-size: 25rpx;
+      margin: 24rpx 0 58rpx;
+}
+.cu-dialog .btn {
+    width: 520rpx;
+    height: 80rpx;
+    background: #fb595f;
+    -webkit-box-shadow: 0 11rpx 16rpx 0 rgba(251, 89, 95, 0.17);
+            box-shadow: 0 11rpx 16rpx 0 rgba(251, 89, 95, 0.17);
+    border-radius: 8rpx;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 28rpx;
+    line-height: 80rpx;
+    text-align: center;
+}
+.mail-item {
+  text-align: left;
+  padding: 22rpx 15rpx;
+  font-size: 24rpx;
+  color: #9F9F9F;
+  position: relative;
+}
+.mail-item .imgbox {
+    width: 140rpx;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 10rpx;
+    margin-right: 16rpx;
+}
+.mail-item .imgbox image {
+      width: 100%;
+}
+.mail-item .name {
+    font-size: 26rpx;
+    color: #FF9518;
+    margin-bottom: 18rpx;
+}
+.mail-item .price {
+    font-size: 22rpx;
+    color: #C1C1C1;
+}
+.mail-item .price ._em {
+      font-style: normal;
+      display: inline-block;
+      color: #FD3C3E;
+      font-size: 28rpx;
+}
+.mail-item .btn {
+    background: #FF9518;
+    font-size: 24rpx;
+    color: #fff;
+    border-radius: 8rpx;
+    width: 110rpx;
+    height: 48rpx;
+    display: block;
+    text-align: center;
+    line-height: 48rpx;
+}
+.mail-item .state {
+    color: #FF9518;
+    font-size: 22rpx;
+    margin-left: 10rpx;
+}
+.mail-item .tag {
+    width: 66rpx;
+    height: 23rpx;
+    background: no-repeat center center;
+    background-size: 100% auto;
+}
+.mail-item .tag1 {
+    background-image: url(/static/proprietary_label@2x.png);
+}
+.mail-item .tag2 {
+    background-image: url(/static/brand_label@2x.png);
+}
+.mail-item .tag3 {
+    background-image: url(/static/base_tag@2x.png);
+}
+.mail-item .tag4 {
+    width: 22rpx;
+    height: 21rpx;
+    background-image: url(/static/base_tag@2x.png);
+}
+.mail-item .mailname {
+    color: #7E7E7E;
+    font-size: 22rpx;
+    margin-left: 10rpx;
+}
+.mail-item .goodstag {
+    background: #F5F5F5;
+    padding: 25rpx 10rpx;
+    border-radius: 8rpx;
+    color: #515151;
+    font-size: 20rpx;
+}
+.mail-item .goodstag view {
+      padding: 5rpx 0;
+}
+

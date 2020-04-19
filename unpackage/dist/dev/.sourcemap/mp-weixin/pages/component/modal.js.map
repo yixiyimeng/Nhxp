@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///E:/程序/花鲜派/Nhxp/main.js"],"names":["Page","App"],"mappings":";;;;;;;;;;AAAA;AACA;AACI,8I;AACAA,IAAI,CAAC,+BAAYC,cAAZ,CAAD,CAAJ,C","file":"pages/component/modal.js","sourcesContent":["import 'uni-pages';\nimport pageFactory from 'mpvue-page-factory'\n    import App from './pages/component/modal.vue'\n    Page(pageFactory(App))"],"sourceRoot":""}

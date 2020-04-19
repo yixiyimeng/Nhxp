@@ -1,0 +1,130 @@
+.pageview {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+.pageview .main {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.mailInfo {
+  color: #717171;
+  font-size: 26rpx;
+  padding: 24rpx;
+  margin: 35rpx 30rpx 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 2rpx 6rpx 0px rgba(26, 170, 104, 0.27);
+          box-shadow: 0px 2rpx 6rpx 0px rgba(26, 170, 104, 0.27);
+  border-radius: 12rpx;
+  z-index: 1;
+  position: relative;
+}
+.mailInfo .imgbox {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #19A967;
+    margin-right: 25rpx;
+}
+.mailInfo .imgbox image {
+      width: 102%;
+      height: 102%;
+}
+.mailInfo .name {
+    color: #323232;
+    font-size: 34rpx;
+    margin-bottom: 23rpx;
+}
+.mailInfo ._p + ._p {
+    margin-top: 15rpx;
+}
+.mailInfo .edit {
+    position: absolute;
+    color: #BCBCBC;
+    top: 35rpx;
+    right: 20rpx;
+}
+.mailInfo .edit image {
+      width: 34rpx;
+      vertical-align: middle;
+}
+.mailInfo .edit text {
+      vertical-align: middle;
+      margin-right: 5rpx;
+}
+.mailInfo .state {
+    position: absolute;
+    right: 24rpx;
+    bottom: 20rpx;
+}
+.mailInfo .state text {
+      margin-right: 17rpx;
+}
+.mailInfo .state .green {
+      color: #19A967;
+}
+.title-bar {
+  color: #19A967;
+  font-size: 32rpx;
+  position: relative;
+  padding: 30rpx;
+}
+.title-bar:before {
+    background: #19A967;
+    width: 10rpx;
+    height: 40rpx;
+    border-radius: 5rpx;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.title-bar:after {
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    left: 30rpx;
+    bottom: 0;
+    background: #eee;
+    -webkit-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+    right: 0;
+}
+.title-bar .more {
+    color: #545454;
+    font-size: 26rpx;
+}
+.cu-list.grid .menu-item {
+  color: #A2A2A2;
+  font-size: 24rpx;
+  padding: 30rpx 0;
+  position: relative;
+}
+.cu-list.grid .menu-item .num {
+    color: #2E302F;
+    font-size: 44rpx;
+    margin-bottom: 10rpx;
+}
+.cu-list.grid .menu-item .imgbox {
+    position: relative;
+    width: 48rpx;
+    margin: 0 auto 10rpx;
+}
+.cu-list.grid .menu-item image {
+    width: 48rpx;
+}
+

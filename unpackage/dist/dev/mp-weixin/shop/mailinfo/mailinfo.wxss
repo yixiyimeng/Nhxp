@@ -1,0 +1,25 @@
+page {
+  height: 100%;
+  background: #fff;
+}
+.cu-form-group ._span {
+  text-align: right;
+  color: #7C7C7C;
+}
+.tip {
+  color: #8B8B8B;
+  font-size: 28rpx;
+}
+.avatar {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 30rpx 0;
+}
+.avatar image {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #19A967;
+}
+
