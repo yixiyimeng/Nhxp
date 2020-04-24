@@ -8,7 +8,7 @@
 <import src="/components/shop/selectcate.vue.wxml" />
 <import src="/components/shop/evaluateItem.vue.wxml" />
 
-<template name="Mfdfd28ca-default-fdfd28ca-2"><template wx:key="index" bindshowMail="handleProxy" bindbuygoods="handleProxy" data-eventid="{{'fdfd28ca-1-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'fdfd28ca-1-'+index],$root}}" is="2ceba1ff" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
+<template name="M069ed196-default-069ed196-2"><template wx:key="index" bindshowMail="handleProxy" bindbuygoods="handleProxy" data-eventid="{{'069ed196-1-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'069ed196-1-'+index],$root}}" is="2ceba1ff" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
 <template name="M627423cf-default-627423cf-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'627423cf-0-'+index],$root}}" is="59b1855e" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
