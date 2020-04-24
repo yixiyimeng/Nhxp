@@ -20,7 +20,7 @@
 						<view class="price">12688.05</view>
 					</view>
 				</view>
-				<view class="btn">提现</view>
+				<navigator class="btn" url="/shop/applycashout/applycashout">提现</navigator>
 			</view>
 			<view class="list">
 				<view class="flex justify-between">

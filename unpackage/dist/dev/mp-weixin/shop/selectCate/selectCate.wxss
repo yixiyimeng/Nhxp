@@ -1,3 +1,43 @@
+.mt20 {
+  margin-top: 20rpx;
+}
+.ml30 {
+  margin-left: 30rpx;
+}
+.cate-item {
+  background: #fff;
+  padding: 20rpx 42rpx 20rpx 20rpx;
+  -webkit-box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
+          box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
+  border-radius: 8rpx;
+  color: #666;
+  font-size: 24rpx;
+}
+.cate-item .imgbox {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+    margin-right: 18rpx;
+}
+.cate-item .imgbox image {
+      width: 100%;
+}
+.cate-item .name {
+    color: #2E2E2E;
+    font-size: 32rpx;
+}
+.cate-item .btn {
+    font-size: 28rpx;
+    color: #fff;
+    background: #19A967;
+    width: 150rpx;
+    height: 70rpx;
+    border-radius: 8rpx;
+    text-align: center;
+    line-height: 70rpx;
+}
+
 .pageview {
   height: 100%;
 }

@@ -1,0 +1,1 @@
+<template name="069ed196"><view class="_view M069ed196"><live-player src="https://domain/pull_stream" autoplay bindstatechange="handleProxy" binderror="handleProxy" style="width: 300px; height: 225px;" data-eventid="{{'069ed196-0'}}" data-comkey="{{$k}}" class="_live-player M069ed196"></live-player></view></template>

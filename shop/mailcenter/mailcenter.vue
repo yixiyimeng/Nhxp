@@ -119,7 +119,7 @@
 			<view class="cu-list menu sm-border">
 				<view class="cu-item arrow" v-for="(item,index) in menulist" :key="index">
 					<view class="content">
-						<navigator :url="item.url" :hover-class="none">{{item.name}}</navigator>
+						<navigator :url="item.url" hover-class="none">{{item.name}}</navigator>
 					</view>
 				</view>
 			</view>
@@ -163,7 +163,7 @@
 				bgColor: 'nobg',
 				switchA: false,
 				menulist: [{
-						url: '',
+						url: '/shop/wallet/wallet',
 						name: '我的钱包'
 					},
 					{
@@ -175,11 +175,11 @@
 						name: '交易查询'
 					},
 					{
-						url: '',
+						url: '/shop/customer/customer',
 						name: '售后订单'
 					},
 					{
-						url: '',
+						url: '/shop/evaluate/evaluate',
 						name: '我的评价'
 					}
 				]

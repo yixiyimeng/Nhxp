@@ -17,6 +17,8 @@
         "addgoods/addgoods",
         "evaluate/evaluate",
         "cashoutlist/cashoutlist",
+        "applycashout/applycashout",
+        "wallet/wallet",
         "customer/customer"
       ]
     }
@@ -26,6 +28,7 @@
     "navigationBarTitleText": "花鲜派",
     "navigationBarTextStyle": "black"
   },
+  "usingComponents": {},
   "tabBar": {
     "color": "#b8b8b8",
     "selectedColor": "#ff5454",
@@ -58,7 +61,5 @@
       }
     ]
   },
-  "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
-  }
+  "sitemapLocation": "sitemap64.json"
 }

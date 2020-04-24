@@ -1,1 +1,2 @@
-<view></view>
+<import src="./order.vue.wxml" />
+    <template is="db1748da" data="{{ ...$root['0'], $root }}"/>
