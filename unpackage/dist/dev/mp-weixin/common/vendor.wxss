@@ -6,16 +6,176 @@
 		background: #19A967;
 }
 
-/* mescroll-uni
- * version 1.1.7
- * 2019-10-15 wenju
- * http://www.mescroll.com
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 无任何数据的空布局 */
+.mescroll-empty {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	padding: 100rpx 50rpx;
+	text-align: center;
+}
+.mescroll-empty.empty-fixed {
+	z-index: 99;
+	position: absolute; /*transform会使fixed失效,最终会降级为absolute */
+	top: 100rpx;
+	left: 0;
+}
+.mescroll-empty .empty-icon {
+	width: 280rpx;
+	height: 280rpx;
+}
+.mescroll-empty .empty-tip {
+	margin-top: 20rpx;
+	font-size: 24rpx;
+	color: gray;
+}
+.mescroll-empty .empty-btn {
+	display: inline-block;
+	margin-top: 40rpx;
+	min-width: 200rpx;
+	padding: 18rpx;
+	font-size: 28rpx;
+	border: 1rpx solid #e04b28;
+	border-radius: 60rpx;
+	color: #e04b28;
+}
+.mescroll-empty .empty-btn:active {
+	opacity: 0.75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 回到顶部的按钮 */
+.mescroll-totop {
+	z-index: 9990;
+	position: fixed !important; /* 加上important避免编译到H5,在多mescroll中定位失效 */
+	right: 20rpx;
+	bottom: 120rpx;
+	width: 72rpx;
+	height: auto;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s; /* 过渡 */
+	margin-bottom: 0px; /* css变量 */
+}
+/* 适配 iPhoneX */
+.mescroll-safe-bottom{
+	margin-bottom: calc(0px + constant(safe-area-inset-bottom)); /* window-bottom + 适配 iPhoneX */
+	margin-bottom: calc(0px + env(safe-area-inset-bottom));
+}
+/* 显示 -- 淡入 */
+.mescroll-totop-in {
+	opacity: 1;
+}
+/* 隐藏 -- 淡出且不接收事件*/
+.mescroll-totop-out {
+	opacity: 0;
+	pointer-events: none;
+}
+
 page {
 	height: 100%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
-	-webkit-overflow-scrolling: touch; /*使iOS列表滑动流畅*/
 }
 .mescroll-uni-warp{
 	height: 100%;
@@ -63,54 +223,42 @@ page {
 	text-align: center;
 }
 
-/* 上拉加载区域 */
-.mescroll-upwarp {
-	min-height: 60rpx;
-	padding: 30rpx 0;
-	text-align: center;
-	clear: both;
-}
-
-/* 下拉刷新,上拉加载--提示文本 */
-.mescroll-downwarp .downwarp-tip,
-.mescroll-upwarp .upwarp-tip,
-.mescroll-upwarp .upwarp-nodata {
+/* 下拉刷新--提示文本 */
+.mescroll-downwarp .downwarp-tip {
 	display: inline-block;
 	font-size: 28rpx;
-	color: gray;
 	vertical-align: middle;
-}
-.mescroll-downwarp .downwarp-tip,
-.mescroll-upwarp .upwarp-tip {
 	margin-left: 16rpx;
+	/* color: gray; 已在style设置color,此处删去*/
 }
 
-/* 下拉刷新,上拉加载--旋转进度条 */
-.mescroll-downwarp .downwarp-progress,
-.mescroll-upwarp .upwarp-progress {
+/* 下拉刷新--旋转进度条 */
+.mescroll-downwarp .downwarp-progress {
 	display: inline-block;
 	width: 32rpx;
 	height: 32rpx;
 	border-radius: 50%;
 	border: 2rpx solid gray;
-	border-bottom-color: transparent;
+	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
 	vertical-align: middle;
 }
 
 /* 旋转动画 */
-.mescroll-rotate {
-	-webkit-animation: mescrollRotate 0.6s linear infinite;
-	animation: mescrollRotate 0.6s linear infinite;
+.mescroll-downwarp .mescroll-rotate {
+	-webkit-animation: mescrollDownRotate 0.6s linear infinite;
+	        animation: mescrollDownRotate 0.6s linear infinite;
 }
-@-webkit-keyframes mescrollRotate {
+@-webkit-keyframes mescrollDownRotate {
 0% {
 		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 }
 100% {
 		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 }
 }
-@keyframes mescrollRotate {
+@keyframes mescrollDownRotate {
 0% {
 		-webkit-transform: rotate(0deg);
 		        transform: rotate(0deg);
@@ -121,97 +269,60 @@ page {
 }
 }
 
-/* 无任何数据的空布局 */
-.mescroll-empty {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	width: 100%;
-	padding: 40rpx;
+/* 上拉加载区域 */
+.mescroll-upwarp {
+	min-height: 60rpx;
+	padding: 30rpx 0;
 	text-align: center;
+	clear: both;
 }
-.mescroll-empty.empty-fixed {
-	z-index: 99;
-	position: fixed; /*transform会使fixed失效,最终会降级为absolute */
-	top: 20%;
-	left: 0;
-}
-.mescroll-empty .empty-icon {
-	width: 45%;
-}
-.mescroll-empty .empty-tip {
-	margin-top: 20rpx;
-	font-size: 24rpx;
-	color: gray;
-}
-.mescroll-empty .empty-btn {
+
+/*提示文本 */
+.mescroll-upwarp .upwarp-tip,
+.mescroll-upwarp .upwarp-nodata {
 	display: inline-block;
-	margin-top: 40rpx;
-	min-width: 200rpx;
-	padding: 18rpx;
 	font-size: 28rpx;
-	border: 1rpx solid #E04B28;
-	border-radius: 60rpx;
-	color: #E04B28;
+	vertical-align: middle;
+	/* color: gray; 已在style设置color,此处删去*/
 }
-.mescroll-empty .empty-btn:active {
-	opacity: .75;
+.mescroll-upwarp .upwarp-tip {
+	margin-left: 16rpx;
 }
 
-/* 回到顶部的按钮 */
-.mescroll-totop {
-	z-index: 9990;
-	position: fixed !important; /* 避免编译到H5,在多mescroll中定位失效 */
-	right: 20rpx;
-	bottom: 120rpx;
-	width: 72rpx;
-	height: 72rpx;
+/*旋转进度条 */
+.mescroll-upwarp .upwarp-progress {
+	display: inline-block;
+	width: 32rpx;
+	height: 32rpx;
 	border-radius: 50%;
-	opacity: 0;
+	border: 2rpx solid gray;
+	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
+	vertical-align: middle;
 }
 
-/* 显示动画--淡入 */
-.mescroll-lazy-in,
-.mescroll-fade-in {
-	-webkit-animation: mescrollFadeIn .3s linear forwards;
-	animation: mescrollFadeIn .3s linear forwards;
+/* 旋转动画 */
+.mescroll-upwarp .mescroll-rotate {
+	-webkit-animation: mescrollUpRotate 0.6s linear infinite;
+	        animation: mescrollUpRotate 0.6s linear infinite;
 }
-@-webkit-keyframes mescrollFadeIn {
+@-webkit-keyframes mescrollUpRotate {
 0% {
-		opacity: 0;
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 }
 100% {
-		opacity: 1;
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 }
 }
-@keyframes mescrollFadeIn {
+@keyframes mescrollUpRotate {
 0% {
-		opacity: 0;
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 }
 100% {
-		opacity: 1;
-}
-}
-
-/* 隐藏动画--淡出 */
-.mescroll-fade-out {
-	pointer-events: none;
-	-webkit-animation: mescrollFadeOut .5s linear forwards;
-	animation: mescrollFadeOut .5s linear forwards;
-}
-@-webkit-keyframes mescrollFadeOut {
-0% {
-		opacity: 1;
-}
-100% {
-		opacity: 0;
-}
-}
-@keyframes mescrollFadeOut {
-0% {
-		opacity: 1;
-}
-100% {
-		opacity: 0;
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 }
 }
 
