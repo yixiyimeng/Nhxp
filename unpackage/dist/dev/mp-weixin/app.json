@@ -26,7 +26,9 @@
         "cashoutlist/cashoutlist",
         "applycashout/applycashout",
         "wallet/wallet",
-        "customer/customer"
+        "customer/customer",
+        "trade/trade",
+        "countorder/countorder"
       ]
     }
   ],
@@ -35,7 +37,6 @@
     "navigationBarTitleText": "花鲜派",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#b8b8b8",
     "selectedColor": "#ff5454",
@@ -67,5 +68,10 @@
         "text": "我的"
       }
     ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "mescroll-body": "/components/mescroll-uni/mescroll-body",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
   }
 }

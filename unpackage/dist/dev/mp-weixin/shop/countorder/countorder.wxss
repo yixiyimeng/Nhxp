@@ -1,0 +1,28 @@
+.toptitle {
+  padding: 24rpx 30rpx;
+  color: #545454;
+  font-size: 26rpx;
+  background: #F7F7F7;
+  line-height: 36rpx;
+}
+.toptitle image {
+    width: 48rpx;
+}
+.toptitle > text {
+    margin: 0 30rpx 0 13rpx;
+}
+.toptitle .btn {
+    background: #19A967;
+    color: #fff;
+    width: 130rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 24rpx;
+}
+.toptitle .btn image {
+      width: 22rpx;
+      margin-right: 10rpx;
+}
+

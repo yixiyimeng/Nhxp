@@ -8,7 +8,7 @@
 		"es6": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.0",
+	"libVersion": "2.9.2",
 	"appid": "touristappid",
 	"projectname": "Nhxp",
 	"condition": {
@@ -36,9 +36,9 @@
 			"current": -1,
 			"list": [
 				{
-					"id": 0,
-					"name": "pages/car/car",
-					"pathName": "pages/car/car",
+					"id": -1,
+					"name": "shop/countorder/countorder",
+					"pathName": "shop/countorder/countorder",
 					"query": "",
 					"scene": null
 				}

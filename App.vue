@@ -263,7 +263,7 @@
 
 	.submitBtn,
 	.cancelBtn,
-	.defaultBtn{
+	.defaultBtn {
 		color: #fff;
 		text-align: center;
 		border-radius: 10upx;
@@ -277,7 +277,78 @@
 		background: #f0f0f0;
 		color: #fc743c;
 	}
-	.defaultBtn{
+
+	.defaultBtn {
 		background: #d5d5d5;
+	}
+</style>
+<style lang="scss">
+	.tablebox {
+		padding: 30upx;
+		color: #434040;
+		font-size: 26upx;
+
+		.table {
+			border: 1px solid #DBDBDB;
+			text-align: center;
+
+			.table-hd,
+			.table-bd .table-td,
+			.table-ft {
+				span {
+					width: 93upx;
+
+					&:first-child {
+						width: 130upx;
+					}
+
+					&+span {
+						border-left: 1px solid #DBDBDB;
+					}
+				}
+			}
+
+			.table-hd {
+				border-bottom: 1px solid #DBDBDB;
+				line-height: 75upx;
+				background: #EEFFF7;
+				color: #19A967;
+				font-size: 28upx;
+				font-weight: bold;
+
+
+			}
+
+			.table-bd .table-td {
+				line-height: 74upx;
+				color: #6C6C6C;
+				font-size: 25upx;
+
+				&+.table-td {
+					border-top: 1px solid #DBDBDB;
+				}
+
+				&:nth-child(even) {
+					background: #F9F9F9;
+				}
+			}
+
+			.table-ft {
+				color: #FD3C3E;
+				font-size: 26upx;
+				border-top: 1px solid #DBDBDB;
+				line-height: 74upx;
+
+				.text-right {
+					color: #2E2E2E;
+					font-size: 28upx;
+					font-weight: bold;
+					padding-right: 54upx;
+					color: #2E2E2E;
+				}
+			}
+		}
+
+
 	}
 </style>

@@ -119,6 +119,16 @@
 				"style": {
 					"navigationBarTitleText": "售后订单"
 				}
+			}, {
+				"path": "trade/trade",
+				"style": {
+					"navigationBarTitleText": "交易记录"
+				}
+			}, {
+				"path": "countorder/countorder",
+				"style": {
+					"navigationBarTitleText": "订单汇总"
+				}
 			}
 		]
 	}],
