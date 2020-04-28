@@ -1,0 +1,11 @@
+.title {
+  color: #8e8e8d;
+  padding: 40rpx 60rpx;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 22rpx;
+}
+.title .action {
+    font-size: 28rpx;
+    font-weight: bold;
+}
+

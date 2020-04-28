@@ -16,7 +16,41 @@
 			"style": {}
 		}
 
-    ],
+		, {
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "平台公示"
+			}
+		}, {
+			"path": "pages/accountDetails/accountDetails",
+			"style": {
+				"navigationBarTitleText": "零钱明细"
+			}
+		}, {
+			"path": "pages/applycashout/applycashout",
+			"style": {
+				"navigationBarTitleText": "余额提现"
+			}
+		}, {
+			"path": "pages/articleDetails/articleDetails",
+			"style": {}
+		}, {
+			"path": "pages/account/account",
+			"style": {
+				"navigationBarTitleText": "账户余额"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "注册登录"
+			}
+		}, {
+			"path": "pages/car/car",
+			"style": {
+				"navigationBarTitleText": "采购单"
+			}
+		}
+	],
 
 	"subPackages": [{
 		"root": "shop",
@@ -39,50 +73,50 @@
 				}
 			},
 			{
-			    "path" : "selectCate/selectCate",
-			    "style" : {
+				"path": "selectCate/selectCate",
+				"style": {
 					"navigationBarTitleText": "添加产品"
 				}
 			},
 			{
-			    "path" : "mailinfo/mailinfo",
-			    "style" : {
+				"path": "mailinfo/mailinfo",
+				"style": {
 					"navigationBarTitleText": "店铺信息"
 				}
 			},
 			{
-			    "path" : "addgoods/addgoods",
-			    "style" : {
+				"path": "addgoods/addgoods",
+				"style": {
 					"navigationBarTitleText": "添加商品"
 				}
 			},
 			{
-			    "path" : "evaluate/evaluate",
-			    "style" : {
+				"path": "evaluate/evaluate",
+				"style": {
 					"navigationBarTitleText": "我的评价"
 				}
 			},
 			{
-			    "path" : "cashoutlist/cashoutlist",
-			    "style" : {
+				"path": "cashoutlist/cashoutlist",
+				"style": {
 					"navigationBarTitleText": "提现记录"
 				}
 			},
 			{
-			    "path" : "applycashout/applycashout",
-			    "style" : {
+				"path": "applycashout/applycashout",
+				"style": {
 					"navigationBarTitleText": "申请提现"
 				}
 			},
 			{
-			    "path" : "wallet/wallet",
-			    "style" : {
+				"path": "wallet/wallet",
+				"style": {
 					"navigationStyle": "custom"
 				}
 			},
 			{
-			    "path" : "customer/customer",
-			    "style" : {
+				"path": "customer/customer",
+				"style": {
 					"navigationBarTitleText": "售后订单"
 				}
 			}

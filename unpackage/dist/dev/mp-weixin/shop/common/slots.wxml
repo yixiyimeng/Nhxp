@@ -1,20 +1,20 @@
-<import src="/colorui/components/cu-custom.vue.wxml" />
 <import src="/components/mescroll-uni/mescroll-uni.vue.wxml" />
 <import src="/components/shop/cate.vue.wxml" />
+<import src="/colorui/components/cu-custom.vue.wxml" />
 <import src="/components/shop/selectcate.vue.wxml" />
 <import src="/components/shop/evaluateItem.vue.wxml" />
+
+<template name="M627423cf-default-627423cf-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'627423cf-0-'+index],$root}}" is="59b1855e" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
 <template name="M205feab6-default-205feab6-0"></template>
 
 <template name="M205feab6-content-205feab6-0">商家中心</template>
 
-<template name="M627423cf-default-627423cf-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'627423cf-0-'+index],$root}}" is="59b1855e" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
-
 <template name="Mb497bd76-default-b497bd76-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'b497bd76-0-'+index],$root}}" is="bf3855cc" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
-<template name="M2b063905-default-2b063905-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'2b063905-0-'+index],$root}}" is="ca4d9b4a" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
-
 <template name="data-v-2cf5ed02-default-694d76d9-0"><view class="_view data-v-2cf5ed02 cashoutlist"><view class="_div data-v-2cf5ed02 cashout-item solid-bottom" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><view class="_div data-v-2cf5ed02 flex justify-between align-center"><view class="_div data-v-2cf5ed02"><view class="_div data-v-2cf5ed02 num">+{{ item.num }}</view><view class="_div data-v-2cf5ed02 time">2020-03-01 05:05:30</view></view><view class="_div data-v-2cf5ed02 state {{'state' + item.state}}">{{item.state|statefilter}}</view></view></view></view></template>
+
+<template name="M2b063905-default-2b063905-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'2b063905-0-'+index],$root}}" is="ca4d9b4a" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
 <template name="M59d7a4f6-default-59d7a4f6-0"></template>
 

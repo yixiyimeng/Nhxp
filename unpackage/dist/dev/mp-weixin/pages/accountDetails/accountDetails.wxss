@@ -1,0 +1,13 @@
+.account-item {
+  color: #a6a6a6;
+  padding: 30rpx 60rpx;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 26rpx;
+}
+.account-item > view:first-child {
+    color: #000;
+    font-size: 32rpx;
+    margin-bottom: 30rpx;
+    font-weight: blod;
+}
+

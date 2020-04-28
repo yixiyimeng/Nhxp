@@ -1,0 +1,47 @@
+.group {
+  padding-top: 40rpx;
+}
+.group .title {
+    padding: 30rpx 65rpx;
+    color: #a6a6a6;
+}
+.group .title .action {
+      color: #000;
+      font-size: 30rpx;
+      font-weight: blod;
+}
+.group .title.solid-bottom {
+      border-bottom-color: #F0F0F0;
+}
+.group .row {
+    font-size: 26rpx;
+    padding: 0 30rpx;
+}
+.group .row .title {
+      padding: 30rpx 35rpx;
+}
+.group .row .row-text {
+      background: #f2f3f7;
+      border-radius: 8rpx;
+      line-height: 70rpx;
+      padding: 0 30rpx;
+      height: 70rpx;
+}
+.group .checkgroup {
+    font-size: 30rpx;
+    color: #000;
+    font-weight: blod;
+}
+.group .checkgroup radio {
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7);
+      margin-right: 16rpx;
+}
+.group .checkgroup .radio-item + .radio-item {
+      margin-left: 50rpx;
+}
+.group .submitBtn {
+    margin: 50rpx 30rpx;
+}
+

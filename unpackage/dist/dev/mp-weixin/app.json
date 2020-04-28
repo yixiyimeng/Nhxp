@@ -3,7 +3,14 @@
     "pages/index/index",
     "pages/list/list",
     "pages/order/order",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/article/article",
+    "pages/accountDetails/accountDetails",
+    "pages/applycashout/applycashout",
+    "pages/articleDetails/articleDetails",
+    "pages/account/account",
+    "pages/login/login",
+    "pages/car/car"
   ],
   "subPackages": [
     {

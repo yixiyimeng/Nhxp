@@ -46,10 +46,10 @@ const MescrollMixin = {
 		// 上拉加载的回调
 		upCallback() {
 			// mixin默认延时500自动结束加载
-			// setTimeout(()=>{
-			// 	this.mescroll.endErr();
-			// }, 500)
-			this.mescroll.endByPage([], 0); 
+			setTimeout(()=>{
+				this.mescroll.endErr();
+			}, 500)
+			//this.mescroll.endByPage([], 0); 
 		}
 	},
 	mounted() {

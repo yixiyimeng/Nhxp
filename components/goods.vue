@@ -1,6 +1,6 @@
 <template>
 	<view class="card">
-		<div class="tjtag" :class="{'tjtag1':goodsinfo.tjtag==2}">{{goodsinfo.tjtag==2?'平台推荐':'今日特惠'}}</div>
+		<div class="tjtag">{{goodsinfo.tjtag==2?'平台推荐':'今日特惠'}}</div>
 		<div class="flex">
 			<div class="imgbox">
 				<image src="/static/demo/img.jpg" mode="widthFix"></image>
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="shopinfo">
-			<span class="tag" :class="{'state'+goodsinfo.state}">{{goodsinfo.state|filtertag}}</span>
+			<span class="tag">{{goodsinfo.state|filtertag}}</span>
 			<span class='favstate'>关注过的店</span>
 			<span>小王的店铺呀呀呀</span>
 			<span class="link">进店 ></span>

@@ -1,0 +1,19 @@
+.account {
+  text-align: center;
+  padding-top: 150rpx;
+  font-size: 30rpx;
+  margin: 0 25rpx;
+  color: #000;
+}
+.account image {
+    display: block;
+    width: 92rpx;
+    margin: 0 auto 50rpx;
+}
+.account .price {
+    font-size: 60rpx;
+    font-weight: blod;
+    margin-top: 10rpx;
+    margin-bottom: 150rpx;
+}
+
