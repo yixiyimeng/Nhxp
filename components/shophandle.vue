@@ -40,7 +40,7 @@
 			},
 			isShowMinus: {
 				type: Boolean,
-				default: false
+				default: true
 			},
 			color: {
 				type: [String, Number],
@@ -113,7 +113,7 @@
 	};
 </script>
 
-<style>
+<style scoped>
 	.operatebar image {
 		height: 56upx;
 		width: 56upx;
@@ -132,6 +132,7 @@
 		display: inline-block;
 		color: #010101;
 		vertical-align: middle;
+		color: #fc733b;
 	}
 
 	/* .num {

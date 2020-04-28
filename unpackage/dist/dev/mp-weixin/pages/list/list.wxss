@@ -352,22 +352,23 @@
 }
 
 
-.operatebar image {
+.operatebar image.data-v-721c986f {
 		height: 56rpx;
 		width: 56rpx;
 		display: block;
 }
-.operatebar ._div {
+.operatebar ._div.data-v-721c986f {
 		display: inline-block;
 		vertical-align: middle;
 }
-.operatebar .num {
+.operatebar .num.data-v-721c986f {
 		width: 60rpx;
 		text-align: center;
 		font-size: 32rpx;
 		display: inline-block;
 		color: #010101;
 		vertical-align: middle;
+		color: #fc733b;
 }
 
 	/* .num {

@@ -1,0 +1,194 @@
+
+.operatebar image.data-v-6ea64c21 {
+	height: 56rpx;
+	width: 56rpx;
+	display: block;
+}
+.operatebar ._div.data-v-6ea64c21 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.operatebar .num.data-v-6ea64c21 {
+	width: 60rpx;
+	text-align: center;
+	font-size: 32rpx;
+	display: inline-block;
+	color: #010101;
+	vertical-align: middle;
+	color: #fc733b;
+}
+
+page,
+.pageview {
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+}
+page .checkbox,
+  .pageview .checkbox {
+    font-size: 30rpx;
+}
+page .checkbox checkbox,
+    .pageview .checkbox checkbox {
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7);
+      margin-right: 15rpx;
+}
+page .topnav,
+  .pageview .topnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94rpx;
+    color: #000;
+    font-size: 30rpx;
+}
+page .topnav .topnav-item,
+    .pageview .topnav .topnav-item {
+      padding: 15rpx 0;
+      margin: 0 15rpx;
+      position: relative;
+}
+page .topnav .topnav-item.active,
+      .pageview .topnav .topnav-item.active {
+        color: #fc723a;
+}
+page .topnav .topnav-item.active:after,
+        .pageview .topnav .topnav-item.active:after {
+          content: '';
+          display: block;
+          height: 1px;
+          width: 65rpx;
+          background: #fc723a;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+}
+page .carbar,
+  .pageview .carbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110rpx;
+    font-size: 26rpx;
+    padding: 0 30rpx;
+}
+page .carbar .block,
+    .pageview .carbar .block {
+      width: 100%;
+      height: 110rpx;
+}
+page .carbar .price,
+    .pageview .carbar .price {
+      color: #e03d3e;
+}
+page .carbar .paybtn,
+    .pageview .carbar .paybtn {
+      margin-left: 30rpx;
+      font-size: 30rpx;
+      text-align: center;
+      line-height: 80rpx;
+      width: 150rpx;
+      border-radius: 20rpx;
+      color: #fff;
+      background-image: -webkit-gradient(linear, left top, right top, from(#fa9148), to(#fc773d));
+      background-image: -o-linear-gradient(left, #fa9148, #fc773d);
+      background-image: linear-gradient(90deg, #fa9148, #fc773d);
+}
+page .list,
+  .pageview .list {
+    position: absolute;
+    top: 94rpx;
+    left: 0;
+    width: 100%;
+    bottom: 110rpx;
+    overflow: auto;
+    padding: 0 25rpx 30rpx;
+}
+page .list .card,
+    .pageview .list .card {
+      background: #fff;
+      border-radius: 20rpx;
+      margin-top: 30rpx;
+}
+page .list .card .shopinfo,
+      .pageview .list .card .shopinfo {
+        border-bottom: 1px solid #e5e5e5;
+        height: 90rpx;
+        font-size: 28rpx;
+        font-weight: blod;
+        color: #000;
+}
+page .list .card .shopinfo image,
+        .pageview .list .card .shopinfo image {
+          display: inline-block;
+          width: 65rpx;
+          height: 65rpx;
+          border-radius: 100%;
+          vertical-align: middle;
+          margin-right: 20rpx;
+}
+page .list .card .shopinfo text,
+        .pageview .list .card .shopinfo text {
+          vertical-align: middle;
+}
+page .list .card .goodslist .goods-item,
+      .pageview .list .card .goodslist .goods-item {
+        padding: 15rpx 0;
+}
+page .list .card .goodslist .goods-item > image,
+        .pageview .list .card .goodslist .goods-item > image {
+          width: 191rpx;
+          height: 191rpx;
+          margin-right: 30rpx;
+}
+page .list .card .goodslist .goods-item .name,
+        .pageview .list .card .goodslist .goods-item .name {
+          font-size: 30rpx;
+          font-weight: bold;
+}
+page .list .card .goodslist .goods-item .tag,
+        .pageview .list .card .goodslist .goods-item .tag {
+          color: #b3b6be;
+          font-size: 22rpx;
+          height: 80rpx;
+          border-bottom: 1px solid #f2f3f7;
+          margin-bottom: 20rpx;
+}
+page .list .card .goodslist .goods-item .price,
+        .pageview .list .card .goodslist .goods-item .price {
+          color: #e03d3e;
+          font-size: 38rpx;
+          font-weight: bolder;
+}
+page .list .card.invalid .title,
+      .pageview .list .card.invalid .title {
+        height: 90rpx;
+        font-size: 26rpx;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 30rpx;
+}
+page .list .card.invalid .goodslist .goods-item .state,
+      .pageview .list .card.invalid .goodslist .goods-item .state {
+        color: #fff;
+        font-size: 22rpx;
+        background: #959595;
+        width: 65rpx;
+        height: 35rpx;
+        line-height: 35rpx;
+        text-align: center;
+        border-radius: 10rpx;
+        margin-left: 5rpx;
+}
+page .list .card.invalid .goodslist .goods-item .tag,
+      .pageview .list .card.invalid .goodslist .goods-item .tag {
+        border-bottom: none;
+}
+

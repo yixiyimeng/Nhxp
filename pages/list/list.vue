@@ -18,7 +18,8 @@
 				</div>
 				<div class="flex-sub" style="overflow: auto;">
 					<mescroll-uni :down="downOption" @down="downCallback" :up="upOption" @up="upCallback" @init="mescrollInit" :fixed="false">
-						<goodsitem class="goods-item" v-for="(item, index) in 10" :key="index" :goodsinfo="item" @showMail="showMail" @buygoods="buygoods"></goodsitem>
+						<goodsitem class="goods-item" v-for="(item, index) in 10" :key="index" :goodsinfo="item" @showMail="showMail"
+						 @buygoods="buygoods"></goodsitem>
 					</mescroll-uni>
 				</div>
 			</div>
@@ -75,7 +76,7 @@
 	import goodsitem from '@/components/goodsitem.vue';
 	import MescrollUni from '@/components/mescroll-uni/mescroll-uni.vue';
 	import tuiActionsheet from "@/components/actionsheet/actionsheet"
-import shophandle from '@/components/shophandle.vue'
+	import shophandle from '@/components/shophandle.vue'
 	export default {
 		data() {
 			return {
@@ -143,8 +144,8 @@ import shophandle from '@/components/shophandle.vue'
 				this.showActionSheet = false;
 				// this.tui.toast(`您点击的按钮索引为：${index}`)
 			},
-			buygoods(){
-				this.showDetails=true;
+			buygoods() {
+				this.showDetails = true;
 			}
 		}
 	};
@@ -285,12 +286,13 @@ import shophandle from '@/components/shophandle.vue'
 				margin: 24upx 0 58upx
 			}
 		}
-		.btn{
-			width:520upx;
-			height:80upx;
-			background:rgba(251,89,95,1);
-			box-shadow:0 11upx 16upx 0 rgba(251,89,95,0.17);
-			border-radius:8upx;
+
+		.btn {
+			width: 520upx;
+			height: 80upx;
+			background: rgba(251, 89, 95, 1);
+			box-shadow: 0 11upx 16upx 0 rgba(251, 89, 95, 0.17);
+			border-radius: 8upx;
 			margin: 0 auto;
 			color: #fff;
 			font-size: 28upx;
