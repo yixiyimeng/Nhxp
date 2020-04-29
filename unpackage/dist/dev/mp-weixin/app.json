@@ -11,7 +11,8 @@
     "pages/account/account",
     "pages/login/login",
     "pages/car/car",
-    "pages/address/address"
+    "pages/address/address",
+    "pages/addaddr/addaddr"
   ],
   "subPackages": [
     {

@@ -11,8 +11,6 @@
 	"libVersion": "2.7.0",
 	"appid": "touristappid",
 	"projectname": "Nhxp",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -38,9 +36,9 @@
 			"current": -1,
 			"list": [
 				{
-					"id": 0,
-					"name": "pages/address/address",
-					"pathName": "pages/address/address",
+					"id": -1,
+					"name": "pages/addaddr/addaddr",
+					"pathName": "pages/addaddr/addaddr",
 					"query": "",
 					"scene": null
 				}

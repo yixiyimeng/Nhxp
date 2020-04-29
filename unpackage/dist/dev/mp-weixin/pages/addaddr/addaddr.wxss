@@ -1,0 +1,20 @@
+.pageview {
+  margin: 0 40rpx;
+  font-size: 26rpx;
+  color: #878787;
+}
+.pageview .group-row {
+    padding: 30rpx 20rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+.pageview .group-row .title {
+      color: #000;
+      font-size: 28rpx;
+      margin-bottom: 15rpx;
+      font-weight: bold;
+}
+.pageview .group-row .picker {
+      height: 1.4rem;
+      line-height: 1.4rem;
+}
+

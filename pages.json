@@ -55,7 +55,11 @@
 				"navigationBarTitleText": "地址管理"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/addaddr/addaddr",
+            "style" : {}
+        }
+    ],
 
 	"subPackages": [{
 		"root": "shop",
