@@ -1,3 +1,23 @@
+
+.operatebar image.data-v-6ea64c21 {
+	height: 56rpx;
+	width: 56rpx;
+	display: block;
+}
+.operatebar ._div.data-v-6ea64c21 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.operatebar .num.data-v-6ea64c21 {
+	width: 60rpx;
+	text-align: center;
+	font-size: 32rpx;
+	display: inline-block;
+	color: #010101;
+	vertical-align: middle;
+	color: #fc733b;
+}
+
 page,
 .pageview {
   height: 100%;

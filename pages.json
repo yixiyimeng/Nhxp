@@ -49,6 +49,11 @@
 			"style": {
 				"navigationBarTitleText": "采购单"
 			}
+		}, {
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "地址管理"
+			}
 		}
 	],
 

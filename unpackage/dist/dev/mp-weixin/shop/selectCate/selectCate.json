@@ -1,7 +1,4 @@
 {
-  "navigationBarTitleText": "添加产品",
-  "usingComponents": {
-    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
-    "selectcate": "/components/shop/selectcate"
-  }
+  "usingComponents": {},
+  "navigationBarTitleText": "添加产品"
 }

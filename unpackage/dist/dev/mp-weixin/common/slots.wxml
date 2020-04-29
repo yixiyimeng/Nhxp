@@ -1,0 +1,42 @@
+<import src="/components/mescroll-uni/mescroll-body.vue.wxml" />
+<import src="/components/articleitem.vue.wxml" />
+<import src="/components/searchbar.vue.wxml" />
+<import src="/components/mescroll-uni/mescroll-uni.vue.wxml" />
+<import src="/components/goodsitem.vue.wxml" />
+<import src="/components/actionsheet/actionsheet.vue.wxml" />
+<import src="/components/shophandle.vue.wxml" />
+<import src="/components/goods.vue.wxml" />
+<import src="/colorui/components/cu-custom.vue.wxml" />
+<import src="/components/shop/selectcate.vue.wxml" />
+<import src="/components/shop/evaluateItem.vue.wxml" />
+<import src="/components/shop/cate.vue.wxml" />
+<import src="/components/address-item.vue.wxml" />
+
+<template name="M5925a823-default-5925a823-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'5925a823-0-'+index],$root}}" is="ba9e8bc2" wx:for="{{dataSource}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="M069ed196-default-069ed196-2"><template wx:key="index" bindshowMail="handleProxy" bindbuygoods="handleProxy" data-eventid="{{'069ed196-1-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'069ed196-1-'+index],$root}}" is="2ceba1ff" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="M5331c215-default-5331c215-0"><view wx:key="index" key="{{index}}" class="_view M5331c215 account-item" wx:for="{{dataSource}}" wx:for-index="index" wx:for-item="item"><view class="_view M5331c215 flex justify-between"><view class="_div M5331c215">平台消费</view><view class="_view M5331c215 price">-128.00</view></view><view class="_view M5331c215 flex justify-between"><view class="_div M5331c215">2020-04-21  12:12:56</view><view class="_view M5331c215">余额<label class="_span M5331c215 margin-left-xs">1000.25</label></view></view></view><view wx:key="index" key="{{index}}" class="_view M5331c215 account-item" wx:for="{{2}}" wx:for-index="index" wx:for-item="item"><view class="_view M5331c215 flex justify-between"><view class="_div M5331c215">平台消费</view><view class="_view M5331c215 price text-orange">+128.00</view></view><view class="_view M5331c215 flex justify-between"><view class="_div M5331c215">2020-04-21  12:12:56</view><view class="_view M5331c215">余额<label class="_span M5331c215 margin-left-xs">1000.25</label></view></view></view></template>
+
+<template name="Mfdfd28ca-default-fdfd28ca-2"><view class="_view Mfdfd28ca bg-white"><view class="_view Mfdfd28ca slide"><swiper class="_swiper Mfdfd28ca swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" indicator-color="#fff" indicator-active-color="#ff5454"><swiper-item wx:key="itemIndex" key="{{itemIndex}}" wx:for="{{imglist}}" wx:for-index="itemIndex" wx:for-item="item" class="_swiper-item Mfdfd28ca"><image class="_image Mfdfd28ca slide-image" src="{{item.img}}" mode="widthFix"></image></swiper-item></swiper></view><view class="_view Mfdfd28ca tag flex align-center justify-center"><label class="_span Mfdfd28ca"><text class="_text Mfdfd28ca icon icon1"></text><text class="_text Mfdfd28ca">基地直供</text></label><label class="_span Mfdfd28ca"><text class="_text Mfdfd28ca icon icon2"></text><text class="_text Mfdfd28ca">花比三家</text></label><label class="_span Mfdfd28ca"><text class="_text Mfdfd28ca icon icon3"></text><text class="_text Mfdfd28ca">用心服务</text></label><label class="_span Mfdfd28ca"><text class="_text Mfdfd28ca icon icon4"></text><text class="_text Mfdfd28ca">售后保证</text></label></view><view class="_view Mfdfd28ca cu-list grid col-4 no-border"><view class="_view Mfdfd28ca cu-item" wx:key="index" key="{{index}}" wx:for="{{cuIconList}}" wx:for-index="index" wx:for-item="item"><view class="_view Mfdfd28ca imgbox"><image src="{{item.img}}" mode="widthFix" class="_image Mfdfd28ca"></image></view><text class="_text Mfdfd28ca">{{item.name}}</text></view></view><view class="_view Mfdfd28ca notice flex align-center"><view class="_view Mfdfd28ca title">商城头条</view><view class="_view Mfdfd28ca line"></view><view class="_view Mfdfd28ca msg flex-sub text-cut">{{msg}}</view></view></view><view class="_view Mfdfd28ca flex tabnav"><view class="_view Mfdfd28ca tab-item flex-sub {{[tabindex == 0 ? 'active' : '']}}"><view class="_view Mfdfd28ca title">今日特惠</view><view class="_view Mfdfd28ca tag">性价比高</view></view><view class="_view Mfdfd28ca line"></view><view class="_view Mfdfd28ca tab-item flex-sub {{[tabindex == 1 ? 'active' : '']}}"><view class="_view Mfdfd28ca title">今日特惠</view><view class="_view Mfdfd28ca tag">性价比高</view></view><view class="_view Mfdfd28ca line"></view><view class="_view Mfdfd28ca tab-item flex-sub {{[tabindex == 2 ? 'active' : '']}}"><view class="_view Mfdfd28ca title">今日特惠</view><view class="_view Mfdfd28ca tag">性价比高</view></view><view class="_view Mfdfd28ca line"></view><view class="_view Mfdfd28ca tab-item flex-sub {{[tabindex == 3 ? 'active' : '']}}"><view class="_view Mfdfd28ca title">今日特惠</view><view class="_view Mfdfd28ca tag">性价比高</view></view></view><view class="_view Mfdfd28ca list"><template data="{{...$root['0'], ...$root[$kk+'fdfd28ca-1'],$root}}" is="ed4b0628"></template></view></template>
+
+<template name="M205feab6-default-205feab6-0"></template>
+
+<template name="M205feab6-content-205feab6-0">商家中心</template>
+
+<template name="Mb497bd76-default-b497bd76-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'b497bd76-0-'+index],$root}}" is="bf3855cc" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="M2b063905-default-2b063905-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'2b063905-0-'+index],$root}}" is="ca4d9b4a" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="M627423cf-default-627423cf-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'627423cf-0-'+index],$root}}" is="59b1855e" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="data-v-776330e4-default-d2e1d2b6-0"><view class="_view data-v-776330e4 customerlist"><view class="_div data-v-776330e4 customer-item" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><view class="_div data-v-776330e4 titlebar flex justify-between align-center"><view class="_div data-v-776330e4 flex-sub">寄过来的数量不对，寄过来的数量不对寄过来的数量不对而且没有...</view><view class="_div data-v-776330e4 state {{'state' + item.state}}">{{item.state|statefilter}}</view></view><view class="_div data-v-776330e4 grid col-2 solid-top solid-bottom"><view class="_view data-v-776330e4"><label class="_span data-v-776330e4">商品：</label><label class="_span data-v-776330e4">戴安娜玫瑰</label></view><view class="_view data-v-776330e4"><label class="_span data-v-776330e4">投诉金额：</label><label class="_span data-v-776330e4">9.80</label></view><view class="_view data-v-776330e4"><label class="_span data-v-776330e4">下单日期：</label><label class="_span data-v-776330e4">2019-03-01</label></view><view class="_view data-v-776330e4"><label class="_span data-v-776330e4">申诉日期：</label><label class="_span data-v-776330e4">2019-03-05</label></view></view><view class="_div data-v-776330e4 footerbar flex justify-between align-center"><view class="_div data-v-776330e4 flex-sub">理赔金额：<label class="_span data-v-776330e4 price"><view class="_em data-v-776330e4">￥</view>19.8</label></view><view class="_div data-v-776330e4 btn">查看</view></view></view></view></template>
+
+<template name="data-v-2cf5ed02-default-694d76d9-0"><view class="_view data-v-2cf5ed02 cashoutlist"><view class="_div data-v-2cf5ed02 cashout-item solid-bottom" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><view class="_div data-v-2cf5ed02 flex justify-between align-center"><view class="_div data-v-2cf5ed02"><view class="_div data-v-2cf5ed02 num">+{{ item.num }}</view><view class="_div data-v-2cf5ed02 time">2020-03-01 05:05:30</view></view><view class="_div data-v-2cf5ed02 state {{'state' + item.state}}">{{item.state|statefilter}}</view></view></view></view></template>
+
+<template name="M59d7a4f6-default-59d7a4f6-0"></template>
+
+<template name="M59d7a4f6-content-59d7a4f6-0">我的钱包</template>
+
+<template name="M36db681f-default-36db681f-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'36db681f-0-'+index],$root}}" is="5155c214" wx:for="{{5}}" wx:for-index="index" wx:for-item="item"></template></template>
+

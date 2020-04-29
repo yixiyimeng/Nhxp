@@ -1,1 +1,2 @@
-<view class="account"><image src="../../static/money.png" mode="widthFix"></image><view>账户余额</view><view class="price">￥8888.00</view><navigator class="submitBtn" url="/pages/accountDetails/accountDetails">账户明细</navigator><navigator class="cancelBtn margin-top" url="/pages/applycashout/applycashout">提现</navigator></view>
+<import src="./account.vue.wxml" />
+    <template is="6ac1fb91" data="{{ ...$root['0'], $root }}"/>
