@@ -1,2 +1,2 @@
 <import src="./countorder.vue.wxml" />
-    <template is="95b1ce76" data="{{ ...$root['0'], $root }}"/>
+    <template is="c0a44e38" data="{{ ...$root['0'], $root }}"/>

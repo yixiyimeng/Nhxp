@@ -31,7 +31,8 @@ page {
   background: #19A967;
   -webkit-box-shadow: 0 9rpx 27rpx 0 rgba(25, 169, 103, 0.58);
           box-shadow: 0 9rpx 27rpx 0 rgba(25, 169, 103, 0.58);
-  border-radius: 12rpx;
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
   color: #fff;
   text-align: center;
   font-size: 30rpx;

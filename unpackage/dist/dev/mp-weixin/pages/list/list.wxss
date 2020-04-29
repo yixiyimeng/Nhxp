@@ -12,7 +12,8 @@
     line-height: 64rpx;
     font-size: 26rpx;
     background: #F7F7F7;
-    border-radius: 32rpx;
+    -webkit-border-radius: 32rpx;
+            border-radius: 32rpx;
 }
 .searchbar > .flex-sub .icon {
       margin: 0 23rpx;
@@ -31,51 +32,53 @@
     background: none;
 }
 
-.ml40.data-v-2ec893b0 {
+.ml40.data-v-efd847fc {
   margin-left: 40rpx;
 }
-.ml25.data-v-2ec893b0 {
+.ml25.data-v-efd847fc {
   margin-left: 25rpx;
 }
-.mt20.data-v-2ec893b0 {
+.mt20.data-v-efd847fc {
   margin-top: 20rpx;
 }
-.mt30.data-v-2ec893b0 {
+.mt30.data-v-efd847fc {
   margin-top: 30rpx;
 }
-.goodsbox.data-v-2ec893b0 {
+.goodsbox.data-v-efd847fc {
   padding: 0 30rpx 15rpx 22rpx;
   -webkit-box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
           box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
   overflow: hidden;
   background: #fff;
 }
-.goodsbox + .goodsbox.data-v-2ec893b0 {
+.goodsbox + .goodsbox.data-v-efd847fc {
     margin-top: 20rpx;
 }
-.goodsbox .goods.data-v-2ec893b0 {
+.goodsbox .goods.data-v-efd847fc {
     font-size: 24rpx;
     color: #9F9F9F;
     position: relative;
     padding: 14rpx;
-    border-radius: 8rpx;
+    -webkit-border-radius: 8rpx;
+            border-radius: 8rpx;
     z-index: 99;
     background: #fff;
     padding-top: 15rpx;
 }
-.goodsbox .goods .imgbox.data-v-2ec893b0 {
+.goodsbox .goods .imgbox.data-v-efd847fc {
       width: 196rpx;
       height: 196rpx;
       overflow: hidden;
       margin-right: 20rpx;
-      border-radius: 10rpx;
+      -webkit-border-radius: 10rpx;
+              border-radius: 10rpx;
 }
-.goodsbox .goods .imgbox image.data-v-2ec893b0 {
+.goodsbox .goods .imgbox image.data-v-efd847fc {
         display: block;
         width: 100%;
         height: 100%;
 }
-.goodsbox .goods .name.data-v-2ec893b0 {
+.goodsbox .goods .name.data-v-efd847fc {
       color: #2E2E2E;
       font-size: 28rpx;
       margin-bottom: 20rpx;
@@ -84,9 +87,10 @@
          text-overflow: ellipsis;
       white-space: nowrap;
 }
-.goodsbox .goods .btn.data-v-2ec893b0 {
+.goodsbox .goods .btn.data-v-efd847fc {
       border: 1px solid #FF5454;
-      border-radius: 8rpx;
+      -webkit-border-radius: 8rpx;
+              border-radius: 8rpx;
       line-height: 48rpx;
       width: 120rpx;
       text-align: center;
@@ -95,7 +99,7 @@
       bottom: 20rpx;
       color: #FF5454;
 }
-.goodsbox .goods .btn.data-v-2ec893b0:after {
+.goodsbox .goods .btn.data-v-efd847fc:after {
         content: '';
         height: 8rpx;
         width: 12rpx;
@@ -107,24 +111,24 @@
         -o-transition: all .3s;
         transition: all .3s;
 }
-.goodsbox .goods .btn.active.data-v-2ec893b0:after {
+.goodsbox .goods .btn.active.data-v-efd847fc:after {
         -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
                 transform: rotate(180deg);
 }
-.goodsbox .goods .price.data-v-2ec893b0 {
+.goodsbox .goods .price.data-v-efd847fc {
       margin-top: 60rpx;
       font-size: 22rpx;
       color: #DADADA;
 }
-.goodsbox .goods .price .red.data-v-2ec893b0 {
+.goodsbox .goods .price .red.data-v-efd847fc {
         color: #FD3C3E;
 }
-.goodsbox .goods .price .ft38.data-v-2ec893b0 {
+.goodsbox .goods .price .ft38.data-v-efd847fc {
         font-size: 38rpx;
         margin-right: 8rpx;
 }
-.goodsbox .maillist.data-v-2ec893b0 {
+.goodsbox .maillist.data-v-efd847fc {
     z-index: 0;
     background: #EAEAEA;
     -webkit-transition: all .3s;
@@ -136,7 +140,7 @@
     height: 0px;
     overflow: hidden;
 }
-.goodsbox .maillist.active.data-v-2ec893b0 {
+.goodsbox .maillist.active.data-v-efd847fc {
       -webkit-transform: translateY(0px);
           -ms-transform: translateY(0px);
               transform: translateY(0px);
@@ -145,17 +149,17 @@
       -o-transition: all .3s;
       transition: all .3s;
 }
-.goodsbox .maillist .mail-item.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item.data-v-efd847fc {
       background: #F5F5F5;
       padding: 22rpx 15rpx;
       font-size: 24rpx;
       color: #9F9F9F;
       position: relative;
 }
-.goodsbox .maillist .mail-item + .mail-item.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item + .mail-item.data-v-efd847fc {
         margin-top: 10rpx;
 }
-.goodsbox .maillist .mail-item.data-v-2ec893b0:before {
+.goodsbox .maillist .mail-item.data-v-efd847fc:before {
         display: block;
         content: '';
         height: 24rpx;
@@ -166,80 +170,83 @@
         background: url(/static/arrowbg.png) no-repeat center center;
         background-size: 100% auto;
 }
-.goodsbox .maillist .mail-item .imgbox.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .imgbox.data-v-efd847fc {
         width: 140rpx;
         background: #fff;
         border: 1px solid #E8E8E8;
-        border-radius: 10rpx;
+        -webkit-border-radius: 10rpx;
+                border-radius: 10rpx;
         margin-right: 16rpx;
 }
-.goodsbox .maillist .mail-item .imgbox image.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .imgbox image.data-v-efd847fc {
           width: 100%;
 }
-.goodsbox .maillist .mail-item .name.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .name.data-v-efd847fc {
         font-size: 26rpx;
         color: #FF9518;
         margin-bottom: 18rpx;
 }
-.goodsbox .maillist .mail-item .price.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .price.data-v-efd847fc {
         font-size: 22rpx;
         color: #C1C1C1;
 }
-.goodsbox .maillist .mail-item .price ._em.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .price ._em.data-v-efd847fc {
           font-style: normal;
           display: inline-block;
           color: #FD3C3E;
           font-size: 28rpx;
 }
-.goodsbox .maillist .mail-item .btn.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .btn.data-v-efd847fc {
         background: #FF9518;
         font-size: 24rpx;
         color: #fff;
-        border-radius: 8rpx;
+        -webkit-border-radius: 8rpx;
+                border-radius: 8rpx;
         width: 110rpx;
         height: 48rpx;
         display: block;
         text-align: center;
         line-height: 48rpx;
 }
-.goodsbox .maillist .mail-item .state.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .state.data-v-efd847fc {
         color: #FF9518;
         font-size: 22rpx;
         margin-left: 10rpx;
 }
-.goodsbox .maillist .mail-item .tag.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .tag.data-v-efd847fc {
         width: 66rpx;
         height: 23rpx;
         background: no-repeat center center;
         background-size: 100% auto;
 }
-.goodsbox .maillist .mail-item .tag1.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .tag1.data-v-efd847fc {
         background-image: url(/static/proprietary_label@2x.png);
 }
-.goodsbox .maillist .mail-item .tag2.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .tag2.data-v-efd847fc {
         background-image: url(/static/brand_label@2x.png);
 }
-.goodsbox .maillist .mail-item .tag3.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .tag3.data-v-efd847fc {
         background-image: url(/static/base_tag@2x.png);
 }
-.goodsbox .maillist .mail-item .tag4.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .tag4.data-v-efd847fc {
         width: 22rpx;
         height: 21rpx;
         background-image: url(/static/base_tag@2x.png);
 }
-.goodsbox .maillist .mail-item .mailname.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .mailname.data-v-efd847fc {
         color: #7E7E7E;
         font-size: 22rpx;
         margin-left: 10rpx;
 }
-.goodsbox .maillist .mail-item .goodstag.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .goodstag.data-v-efd847fc {
         background: #fff;
         padding: 25rpx 10rpx;
-        border-radius: 8rpx;
+        -webkit-border-radius: 8rpx;
+                border-radius: 8rpx;
         color: #515151;
         font-size: 20rpx;
 }
-.goodsbox .maillist .mail-item .goodstag view.data-v-2ec893b0 {
+.goodsbox .maillist .mail-item .goodstag view.data-v-efd847fc {
           padding: 5rpx 0;
 }
 
@@ -352,16 +359,16 @@
 }
 
 
-.operatebar image.data-v-721c986f {
+.operatebar image.data-v-7cada456 {
 		height: 56rpx;
 		width: 56rpx;
 		display: block;
 }
-.operatebar ._div.data-v-721c986f {
+.operatebar ._div.data-v-7cada456 {
 		display: inline-block;
 		vertical-align: middle;
 }
-.operatebar .num.data-v-721c986f {
+.operatebar .num.data-v-7cada456 {
 		width: 60rpx;
 		text-align: center;
 		font-size: 32rpx;
@@ -466,7 +473,8 @@ page,
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   padding: 2rpx 12rpx;
   font-size: 20rpx;
   line-height: 25rpx;
@@ -516,7 +524,8 @@ page,
     background: #fb595f;
     -webkit-box-shadow: 0 11rpx 16rpx 0 rgba(251, 89, 95, 0.17);
             box-shadow: 0 11rpx 16rpx 0 rgba(251, 89, 95, 0.17);
-    border-radius: 8rpx;
+    -webkit-border-radius: 8rpx;
+            border-radius: 8rpx;
     margin: 0 auto;
     color: #fff;
     font-size: 28rpx;
@@ -534,7 +543,8 @@ page,
     width: 140rpx;
     background: #fff;
     border: 1px solid #E8E8E8;
-    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+            border-radius: 10rpx;
     margin-right: 16rpx;
 }
 .mail-item .imgbox image {
@@ -559,7 +569,8 @@ page,
     background: #FF9518;
     font-size: 24rpx;
     color: #fff;
-    border-radius: 8rpx;
+    -webkit-border-radius: 8rpx;
+            border-radius: 8rpx;
     width: 110rpx;
     height: 48rpx;
     display: block;
@@ -599,7 +610,8 @@ page,
 .mail-item .goodstag {
     background: #F5F5F5;
     padding: 25rpx 10rpx;
-    border-radius: 8rpx;
+    -webkit-border-radius: 8rpx;
+            border-radius: 8rpx;
     color: #515151;
     font-size: 20rpx;
 }

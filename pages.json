@@ -54,12 +54,12 @@
 			"style": {
 				"navigationBarTitleText": "地址管理"
 			}
+		}, {
+			"path": "pages/addaddr/addaddr",
+			"style": {}
 		}
-	    ,{
-            "path" : "pages/addaddr/addaddr",
-            "style" : {}
-        }
-    ],
+
+	],
 
 	"subPackages": [{
 		"root": "shop",
@@ -137,6 +137,11 @@
 				"path": "countorder/countorder",
 				"style": {
 					"navigationBarTitleText": "订单汇总"
+				}
+			}, {
+				"path": "orderlist/orderlist",
+				"style": {
+					"navigationBarTitleText": "订单记录"
 				}
 			}
 		]

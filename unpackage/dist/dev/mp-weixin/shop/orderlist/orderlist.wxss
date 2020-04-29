@@ -1,0 +1,78 @@
+.card {
+  -webkit-box-shadow: 0px 4rpx 16rpx 0px #d5d5d5;
+          box-shadow: 0px 4rpx 16rpx 0px #d5d5d5;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
+  margin: 0 30rpx 20rpx;
+  color: #2e2e2e;
+  font-size: 28rpx;
+  padding: 0 15rpx;
+}
+.card .tablebox {
+    padding: 30rpx 0 0;
+}
+.card .card-hd {
+    height: 84rpx;
+    padding: 0 10rpx;
+    color: #ababab;
+    font-size: 26rpx;
+    border-bottom: 1px solid #ededed;
+}
+.card .card-hd .title {
+      color: #FD3C3E;
+      font-size: 30rpx;
+}
+.card .card-hd .arrow {
+      color: #19A967;
+      font-size: 28rpx;
+}
+.card .card-ft {
+    height: 100rpx;
+}
+.card .card-ft .price {
+      color: #FD3C3E;
+}
+.card .card-ft .btn {
+      color: #fff;
+      background: #19a967;
+      -webkit-border-radius: 8rpx;
+              border-radius: 8rpx;
+      width: 160rpx;
+      line-height: 56rpx;
+      text-align: center;
+}
+
+.pageview,
+page {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  height: 100rpx;
+  color: #626262;
+  padding: 0 50rpx;
+  border-bottom: 1px solid #EAEAEA;
+  font-size: 30rpx;
+}
+.navbar .active {
+    color: #19a967;
+    position: relative;
+}
+.navbar .active:after {
+      width: 35rpx;
+      height: 5rpx;
+      background: #19a967;
+      -webkit-border-radius: 3rpx;
+              border-radius: 3rpx;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+}
+.list {
+  overflow: auto;
+  padding-top: 20rpx;
+}
+

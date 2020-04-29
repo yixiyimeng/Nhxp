@@ -30,7 +30,8 @@
         "wallet/wallet",
         "customer/customer",
         "trade/trade",
-        "countorder/countorder"
+        "countorder/countorder",
+        "orderlist/orderlist"
       ]
     }
   ],
