@@ -1,0 +1,211 @@
+page,
+.pageview {
+  height: 100%;
+  background: #ededed;
+  overflow: hidden;
+  width: 100%;
+  color: #000;
+  font-size: 26rpx;
+}
+page .main,
+  .pageview .main {
+    overflow: auto;
+    padding: 30rpx 25rpx;
+    -webkit-overflow-scrolling: touch;
+}
+page .main .card,
+    .pageview .main .card {
+      border-radius: 30rpx;
+      padding: 40rpx 30rpx;
+}
+page .main .card .noaddr,
+      .pageview .main .card .noaddr {
+        height: 70rpx;
+        font-weight: blod;
+        color: #000;
+}
+page .main .card .group-row .title,
+      .pageview .main .card .group-row .title {
+        width: 4em;
+        margin-right: 40rpx;
+        font-weight: bold;
+        color: #000;
+}
+page .main .card .group-row input,
+      .pageview .main .card .group-row input {
+        background: #f2f3f7;
+        border-radius: 10rpx;
+        height: 50rpx;
+        line-height: 50rpx;
+        padding-left: 30rpx;
+        font-size: 20rpx;
+}
+page .main .card .group-row .picker,
+      .pageview .main .card .group-row .picker {
+        font-size: 22rpx;
+        color: #a4a4a4;
+}
+page .main .card .group-row .picker text,
+        .pageview .main .card .group-row .picker text {
+          vertical-align: middle;
+}
+page .main .card .group-row .picker .cuIcon-right,
+        .pageview .main .card .group-row .picker .cuIcon-right {
+          font-size: 40rpx;
+          color: #474747;
+          margin-left: 20rpx;
+}
+page .main .card .group-row .text-gray,
+      .pageview .main .card .group-row .text-gray {
+        font-size: 22rpx;
+        color: #a4a4a4;
+}
+page .main .card .group-row .tag,
+      .pageview .main .card .group-row .tag {
+        padding-top: 20rpx;
+        color: #8f8f8f;
+        font-size: 20rpx;
+}
+page .main .shop,
+    .pageview .main .shop {
+      padding: 0;
+}
+page .main .shop .shop-hd,
+      .pageview .main .shop .shop-hd {
+        height: 74rpx;
+        padding-left: 33rpx;
+        font-size: 22rpx;
+        border-bottom: 1px solid #eee;
+        font-weight: blod;
+}
+page .main .shop .shop-hd image,
+        .pageview .main .shop .shop-hd image {
+          height: 45rpx;
+          width: 45rpx;
+          border-radius: 100%;
+          margin-right: 20rpx;
+}
+page .main .shop .shop-bd,
+      .pageview .main .shop .shop-bd {
+        padding: 30rpx;
+        color: #000;
+}
+page .main .shop .shop-ft,
+      .pageview .main .shop .shop-ft {
+        height: 65rpx;
+        color: #000;
+        font-size: 24rpx;
+        border-top: 1px solid #eee;
+        font-weight: blod;
+}
+page .main .shop .shop-ft .cuIcon-unfold,
+        .pageview .main .shop .shop-ft .cuIcon-unfold {
+          color: #9c9c9c;
+          margin-left: 15rpx;
+}
+page .main .shop .goods-item image,
+      .pageview .main .shop .goods-item image {
+        width: 124rpx;
+        height: 124rpx;
+        margin-right: 30rpx;
+}
+page .main .shop .goods-item + .goods-item,
+      .pageview .main .shop .goods-item + .goods-item {
+        margin-top: 30rpx;
+}
+page .main .shop .goods-item .name,
+      .pageview .main .shop .goods-item .name {
+        font-weight: blod;
+        font-size: 30rpx;
+}
+page .main .shop .goods-item .num,
+      .pageview .main .shop .goods-item .num {
+        font-weight: bloder;
+        font-size: 28rpx;
+        margin-right: 100rpx;
+}
+page .main .shop .goods-item .tag,
+      .pageview .main .shop .goods-item .tag {
+        color: #b3b6be;
+        font-size: 20rpx;
+        margin: 15rpx 0 20rpx;
+}
+page .main .shop .goods-item .price,
+      .pageview .main .shop .goods-item .price {
+        font-size: 28rpx;
+        font-weight: bloder;
+}
+page .footerbar,
+  .pageview .footerbar {
+    height: 109rpx;
+    position: relative;
+    z-index: 99;
+    -webkit-box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
+    padding: 0 25rpx;
+}
+page .footerbar .btn,
+    .pageview .footerbar .btn {
+      font-size: 30rpx;
+      color: #fff;
+      background-image: -webkit-gradient(linear, left top, right top, from(#fb9549), to(#fc733b));
+      background-image: -o-linear-gradient(left, #fb9549, #fc733b);
+      background-image: linear-gradient(90deg, #fb9549, #fc733b);
+      height: 80rpx;
+      width: 150rpx;
+      border-radius: 10rpx;
+      text-align: center;
+      line-height: 80rpx;
+      margin-left: 30rpx;
+}
+page .fastmail-item,
+  .pageview .fastmail-item {
+    color: #a1a1a1;
+    font-size: 20rpx;
+    text-align: left;
+}
+page .fastmail-item + .fastmail-item,
+    .pageview .fastmail-item + .fastmail-item {
+      margin-top: 20rpx;
+}
+page .fastmail-item .name,
+    .pageview .fastmail-item .name {
+      color: #fff;
+      background-image: -webkit-gradient(linear, left top, right top, from(#fb9549), to(#fc733b));
+      background-image: -o-linear-gradient(left, #fb9549, #fc733b);
+      background-image: linear-gradient(90deg, #fb9549, #fc733b);
+      border-radius: 10rpx;
+      text-align: center;
+      line-height: 50rpx;
+      width: 127rpx;
+      font-size: 22rpx;
+      margin-right: 24rpx;
+}
+page .fastmail-item .tag,
+    .pageview .fastmail-item .tag {
+      background: #f2f3f7;
+      padding: 20rpx 35rpx;
+      font-size: 20rpx;
+      color: #747474;
+      line-height: 48rpx;
+      margin-top: 10rpx;
+      border-radius: 10rpx;
+}
+page .fastmail-item radio,
+    .pageview .fastmail-item radio {
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7);
+}
+page .cu-dialog .fastmailway,
+  .pageview .cu-dialog .fastmailway {
+    padding: 37rpx 60rpx 30rpx;
+    text-align: left;
+}
+page .cu-dialog .fastmailway .tip,
+    .pageview .cu-dialog .fastmailway .tip {
+      color: #626262;
+      font-size: 22rpx;
+      margin-bottom: 20rpx;
+}
+

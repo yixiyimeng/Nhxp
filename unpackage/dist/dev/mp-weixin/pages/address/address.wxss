@@ -1,11 +1,10 @@
 .card {
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   font-size: 26rpx;
   margin: 0 26rpx 30rpx;
   color: #000;
 }
-.card .card-bt {
+.card .card-bd {
     padding: 30rpx 36rpx;
 }
 .card .name {

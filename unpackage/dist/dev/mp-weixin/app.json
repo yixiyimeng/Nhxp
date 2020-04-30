@@ -12,7 +12,9 @@
     "pages/login/login",
     "pages/car/car",
     "pages/address/address",
-    "pages/addaddr/addaddr"
+    "pages/addaddr/addaddr",
+    "pages/submitOrder/submitOrder",
+    "pages/follow/follow"
   ],
   "subPackages": [
     {

@@ -17,4 +17,7 @@
       height: 1.4rem;
       line-height: 1.4rem;
 }
+.pageview .submitBtn {
+    margin-top: 45rpx;
+}
 

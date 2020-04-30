@@ -1,0 +1,2 @@
+<import src="./submitOrder.vue.wxml" />
+    <template is="0439b8e3" data="{{ ...$root['0'], $root }}"/>

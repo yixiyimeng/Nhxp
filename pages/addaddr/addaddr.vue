@@ -64,5 +64,8 @@
 				line-height: 1.4rem;
 			}
 		}
+		.submitBtn{
+			margin-top: 45upx;
+		}
 	}
 </style>

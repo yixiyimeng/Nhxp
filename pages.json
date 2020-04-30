@@ -57,8 +57,17 @@
 		}, {
 			"path": "pages/addaddr/addaddr",
 			"style": {}
+		}, {
+			"path": "pages/submitOrder/submitOrder",
+			"style": {
+				"navigationBarTitleText": "提交订单"
+			}
+		}, {
+			"path": "pages/follow/follow",
+			"style": {
+				"navigationBarTitleText": "关注"
+			}
 		}
-
 	],
 
 	"subPackages": [{

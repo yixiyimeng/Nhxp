@@ -3,8 +3,7 @@
   padding: 0 14rpx;
   -webkit-box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
           box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   color: #666;
   font-size: 24rpx;
 }
@@ -27,8 +26,7 @@
 .cate-item .imgbox {
     width: 160rpx;
     height: 160rpx;
-    -webkit-border-radius: 8rpx;
-            border-radius: 8rpx;
+    border-radius: 8rpx;
     overflow: hidden;
     margin-right: 18rpx;
 }
@@ -59,8 +57,7 @@
     height: 59rpx;
     text-align: center;
     line-height: 59rpx;
-    -webkit-border-radius: 8rpx;
-            border-radius: 8rpx;
+    border-radius: 8rpx;
     color: #FD3C3E;
     background: #fff;
     border: 1px solid #FD3C3E;
@@ -105,8 +102,7 @@
     background: #19a967;
     -webkit-box-shadow: 0 2rpx 9rpx 0 rgba(25, 169, 103, 0.58);
             box-shadow: 0 2rpx 9rpx 0 rgba(25, 169, 103, 0.58);
-    -webkit-border-radius: 8rpx;
-            border-radius: 8rpx;
+    border-radius: 8rpx;
     font-size: 26rpx;
     color: #fff;
     line-height: 64rpx;

@@ -1,14 +1,14 @@
 
-.operatebar image.data-v-0e1e71fb {
+.operatebar image.data-v-6ea64c21 {
 	height: 56rpx;
 	width: 56rpx;
 	display: block;
 }
-.operatebar ._div.data-v-0e1e71fb {
+.operatebar ._div.data-v-6ea64c21 {
 	display: inline-block;
 	vertical-align: middle;
 }
-.operatebar .num.data-v-0e1e71fb {
+.operatebar .num.data-v-6ea64c21 {
 	width: 60rpx;
 	text-align: center;
 	font-size: 32rpx;
@@ -96,11 +96,9 @@ page .carbar .paybtn,
       text-align: center;
       line-height: 80rpx;
       width: 150rpx;
-      -webkit-border-radius: 20rpx;
-              border-radius: 20rpx;
+      border-radius: 20rpx;
       color: #fff;
       background-image: -webkit-gradient(linear, left top, right top, from(#fa9148), to(#fc773d));
-      background-image: -webkit-linear-gradient(left, #fa9148, #fc773d);
       background-image: -o-linear-gradient(left, #fa9148, #fc773d);
       background-image: linear-gradient(90deg, #fa9148, #fc773d);
 }
@@ -117,8 +115,7 @@ page .list,
 page .list .card,
     .pageview .list .card {
       background: #fff;
-      -webkit-border-radius: 20rpx;
-              border-radius: 20rpx;
+      border-radius: 20rpx;
       margin-top: 30rpx;
 }
 page .list .card .shopinfo,
@@ -134,8 +131,7 @@ page .list .card .shopinfo image,
           display: inline-block;
           width: 65rpx;
           height: 65rpx;
-          -webkit-border-radius: 100%;
-                  border-radius: 100%;
+          border-radius: 100%;
           vertical-align: middle;
           margin-right: 20rpx;
 }
@@ -188,8 +184,7 @@ page .list .card.invalid .goodslist .goods-item .state,
         height: 35rpx;
         line-height: 35rpx;
         text-align: center;
-        -webkit-border-radius: 10rpx;
-                border-radius: 10rpx;
+        border-radius: 10rpx;
         margin-left: 5rpx;
 }
 page .list .card.invalid .goodslist .goods-item .tag,

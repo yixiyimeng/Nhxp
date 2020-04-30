@@ -1,2 +1,2 @@
 <import src="./cashoutlist.vue.wxml" />
-    <template is="65b6a990" data="{{ ...$root['0'], $root }}"/>
+    <template is="694d76d9" data="{{ ...$root['0'], $root }}"/>

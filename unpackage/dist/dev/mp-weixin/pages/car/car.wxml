@@ -1,2 +1,2 @@
 <import src="./car.vue.wxml" />
-    <template is="fe7ccc40" data="{{ ...$root['0'], $root }}"/>
+    <template is="4939205f" data="{{ ...$root['0'], $root }}"/>

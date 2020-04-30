@@ -1,6 +1,5 @@
 .card {
-  -webkit-border-radius: 30rpx;
-          border-radius: 30rpx;
+  border-radius: 30rpx;
   position: relative;
   overflow: hidden;
   padding: 35rpx 20rpx;
@@ -13,8 +12,7 @@
     top: 0;
     height: 58rpx;
     width: 58rpx;
-    -webkit-border-radius: 0 20rpx 0 20rpx;
-            border-radius: 0 20rpx 0 20rpx;
+    border-radius: 0 20rpx 0 20rpx;
     color: #fff;
     font-size: 16rpx;
     padding: 10rpx;
@@ -67,8 +65,7 @@
       height: 25rpx;
       display: inline-block;
       padding: 0 10rpx;
-      -webkit-border-radius: 5rpx;
-              border-radius: 5rpx;
+      border-radius: 5rpx;
       font-size: 16rpx;
       margin-right: 10rpx;
 }
@@ -83,11 +80,9 @@
       font-size: 24rpx;
       width: 150rpx;
       line-height: 60rpx;
-      -webkit-border-radius: 15rpx;
-              border-radius: 15rpx;
+      border-radius: 15rpx;
       text-align: center;
       background-image: -webkit-gradient(linear, left top, right top, from(#fe8c2d), to(#fe5504));
-      background-image: -webkit-linear-gradient(left, #fe8c2d, #fe5504);
       background-image: -o-linear-gradient(left, #fe8c2d, #fe5504);
       background-image: linear-gradient(90deg, #fe8c2d, #fe5504);
 }
@@ -178,7 +173,6 @@ page,
     margin-top: 0;
 }
 .notice {
-  background-image: -webkit-linear-gradient(45deg, #fe8c2d, #fe5504);
   background-image: -o-linear-gradient(45deg, #fe8c2d, #fe5504);
   background-image: linear-gradient(45deg, #fe8c2d, #fe5504);
   color: #fff;
@@ -215,12 +209,10 @@ page,
     width: 120rpx;
     height: 35rpx;
     line-height: 35rpx;
-    -webkit-border-radius: 100rpx;
-            border-radius: 100rpx;
+    border-radius: 100rpx;
     margin: 10rpx auto 0;
 }
 .tabnav .tab-item.active .tag {
-    background-image: -webkit-linear-gradient(45deg, #fe8c2d, #fe5504);
     background-image: -o-linear-gradient(45deg, #fe8c2d, #fe5504);
     background-image: linear-gradient(45deg, #fe8c2d, #fe5504);
     color: #fff;

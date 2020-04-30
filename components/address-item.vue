@@ -1,6 +1,6 @@
 <template>
 	<view class="card bg-white">
-		<view class="flex align-center card-bt">
+		<view class="flex align-center card-bd">
 			<image src="/static/icon15.png" mode="widthFix" class="addr"></image>
 			<view class="flex-sub">
 				<view class="">
@@ -46,7 +46,7 @@
 		margin: 0 26upx 30upx;
 		color: #000;
 
-		.card-bt {
+		.card-bd {
 			padding: 30upx 36upx;
 		}
 

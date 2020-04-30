@@ -22,8 +22,7 @@
 }
 .group .row .row-text {
       background: #f2f3f7;
-      -webkit-border-radius: 8rpx;
-              border-radius: 8rpx;
+      border-radius: 8rpx;
       line-height: 70rpx;
       padding: 0 30rpx;
       height: 70rpx;

@@ -85,8 +85,7 @@
 	padding: 18rpx;
 	font-size: 28rpx;
 	border: 1rpx solid #e04b28;
-	-webkit-border-radius: 60rpx;
-	        border-radius: 60rpx;
+	border-radius: 60rpx;
 	color: #e04b28;
 }
 .mescroll-empty .empty-btn:active {
@@ -151,8 +150,7 @@
 	bottom: 120rpx;
 	width: 72rpx;
 	height: auto;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	opacity: 0;
 	-webkit-transition: opacity 0.5s;
 	-o-transition: opacity 0.5s;
@@ -161,10 +159,8 @@
 }
 /* 适配 iPhoneX */
 .mescroll-safe-bottom{
-	margin-bottom: 0px;
-	margin-bottom: 0px; /* window-bottom + 适配 iPhoneX */
-	margin-bottom: 0px;
-	margin-bottom: 0px;
+	margin-bottom: calc(0px + constant(safe-area-inset-bottom)); /* window-bottom + 适配 iPhoneX */
+	margin-bottom: calc(0px + env(safe-area-inset-bottom));
 }
 /* 显示 -- 淡入 */
 .mescroll-totop-in {
@@ -241,8 +237,7 @@ page {
 	display: inline-block;
 	width: 32rpx;
 	height: 32rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	border: 2rpx solid gray;
 	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
 	vertical-align: middle;
@@ -299,8 +294,7 @@ page {
 	display: inline-block;
 	width: 32rpx;
 	height: 32rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	border: 2rpx solid gray;
 	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
 	vertical-align: middle;

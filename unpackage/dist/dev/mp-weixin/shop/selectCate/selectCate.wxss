@@ -9,16 +9,14 @@
   padding: 20rpx 42rpx 20rpx 20rpx;
   -webkit-box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
           box-shadow: 0 4rpx 16rpx 0 #d5d5d5;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   color: #666;
   font-size: 24rpx;
 }
 .cate-item .imgbox {
     width: 160rpx;
     height: 160rpx;
-    -webkit-border-radius: 8rpx;
-            border-radius: 8rpx;
+    border-radius: 8rpx;
     overflow: hidden;
     margin-right: 18rpx;
 }
@@ -35,8 +33,7 @@
     background: #19A967;
     width: 150rpx;
     height: 70rpx;
-    -webkit-border-radius: 8rpx;
-            border-radius: 8rpx;
+    border-radius: 8rpx;
     text-align: center;
     line-height: 70rpx;
 }

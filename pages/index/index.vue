@@ -58,7 +58,7 @@
 				</view>
 			</view>
 			<view class="list">
-				<goods></goods>
+				<goods :goodsinfo="goods"></goods>
 			</view>
 
 		</mescroll-body>
@@ -106,7 +106,10 @@
 					img: '/static/icon12.png',
 					name: '平台公示'
 				}],
-				tabindex: 0
+				tabindex: 0,
+				goodslist:[{
+					tjtag
+				}]
 			};
 		},
 		mixins: [MescrollMixin],

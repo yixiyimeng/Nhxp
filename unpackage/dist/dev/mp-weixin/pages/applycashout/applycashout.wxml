@@ -1,2 +1,2 @@
 <import src="./applycashout.vue.wxml" />
-    <template is="37cc31d6" data="{{ ...$root['0'], $root }}"/>
+    <template is="b19692d6" data="{{ ...$root['0'], $root }}"/>
