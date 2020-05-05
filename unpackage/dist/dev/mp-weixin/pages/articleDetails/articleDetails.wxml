@@ -1,2 +1,1 @@
-<import src="./articleDetails.vue.wxml" />
-    <template is="29a39135" data="{{ ...$root['0'], $root }}"/>
+<view><view class="title flex justify-between align-center"><view class="action text-orange">免责说明</view><view>浏览量：9620</view></view></view>

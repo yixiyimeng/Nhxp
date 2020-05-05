@@ -1,0 +1,36 @@
+.name {
+  font-size: 32rpx;
+  color: #FD3C3E;
+}
+.state {
+  color: #FF9518;
+  font-size: 30rpx;
+}
+.price {
+  color: #FD3C3E;
+  font-size: 30rpx;
+}
+.cu-list {
+  color: #7C7C7C;
+  font-size: 28rpx;
+}
+.cu-list .cu-item .content {
+    padding: 40rpx 0;
+}
+.cu-list .title {
+    color: #333;
+    font-weight: bold;
+    min-width: calc(4em + 15px);
+}
+.cu-list .imgbox {
+    width: 100%;
+    margin-top: 30rpx;
+    -webkit-box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, 0.1);
+    border-radius: 12rpx;
+    overflow: hidden;
+}
+.cu-list .imgbox image {
+      width: 100%;
+}
+

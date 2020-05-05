@@ -1,0 +1,12 @@
+page,
+.pageview {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+page .tabbar,
+  .pageview .tabbar {
+    -webkit-box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+

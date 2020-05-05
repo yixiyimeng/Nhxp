@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "searchbar": "/components/searchbar",
+    "goodsitem": "/components/goodsitem",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "tui-actionsheet": "/components/actionsheet/actionsheet",
+    "shophandle": "/components/shophandle"
+  }
 }

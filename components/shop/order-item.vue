@@ -48,6 +48,7 @@
 				<text class="price">50元</text>
 			</view>
 			<view class="btn">确认配送</view>
+			<view class="btn cancelBtn">取消配送</view>
 		</view>
 	</view>
 </template>
@@ -97,7 +98,10 @@ export default {
 			border-radius: 8upx;
 			width: 160upx;
 			line-height: 56upx;
-			text-align: center
+			text-align: center;
+			&.cancelBtn{
+				background:#FD3C3E ;
+			}
 		}
 	}
 }
