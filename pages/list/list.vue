@@ -1,105 +1,129 @@
 <template>
 	<view class="view-page flex flex-direction">
-		<searchbar></searchbar>
-		<div class="flex-sub grid flex" style="overflow: hidden;">
-			<div class="submenu">
-				<scroll-view scroll-y="true" class="scroll-view" :scroll-into-view="'head-' + cateIndex">
-					<div class="submenu-item flex flex-align-center" :class="{ active: cateIndex == myitemIndex }" v-for="(item, myitemIndex) in menulist"
-					 :key="myitemIndex" @click="scrollTo(myitemIndex, item)" :id="'head-' + myitemIndex">
-						<i :class="{ show: item.num > 0 && myitemIndex != 0 && isOpen == 1 }">{{ item.num > 100 ? '99+' : item.num }}</i>
-						<span class="cate " v-bind:style="{ color: item.color }">{{ item.name }}</span>
-					</div>
-				</scroll-view>
-			</div>
-			<div class="main flex-sub flex flex-direction" style="overflow: hidden; height: 100%;">
-				<div class="filterbar">
-					<div class="filter-item">销量</div>
-					<div class="filter-item filter-item-price">价格</div>
-				</div>
-				<div class="flex-sub" style="overflow: auto;">
-					<mescroll-uni :down="downOption" @down="downCallback" :up="upOption" @up="upCallback" @init="mescrollInit" :fixed="false">
-						<goodsitem class="goods-item" v-for="(item, index) in 10" :key="index" :goodsinfo="item" @showMail="showMail"
-						 @buygoods="buygoods"></goodsitem>
-					</mescroll-uni>
-				</div>
-			</div>
-		</div>
-		<tui-actionsheet :show="showActionSheet" :item-list="itemList" @click="itemClick" @cancel="showActionSheet=false"></tui-actionsheet>
+		<view class="bg-white">
+			<searchbar></searchbar>
+			<view class="topbar flex align-center">
+				<view class="flex-sub">
+					<scroll-view scroll-x class=" nav  ">
+						<view class=" scrollview flex text-center">
+							<span v-for="(item,index) in menulist" :key="index" :class="{'active':index==0}">{{item}}</span>
+						</view>
+					</scroll-view>
+				</view>
+				<span class="line"></span>
+				<span class="arrow"></span>
+			</view>
+			<view class="filterbar flex align-center">
+				<span class="active">默认</span>
+				<span>
+					<text>销售</text>
+					<image src="../../static/icon25.png" mode="widthFix"></image>
+				</span>
+				<span>
+					<text>价格</text>
+					<image src="../../static/icon25.png" mode="widthFix"></image>
+				</span>
+				<span class="filter">
+					<text>筛选</text>
+					<image src="../../static/icon24.png" mode="widthFix"></image>
+				</span>
+			</view>
+		</view>
+		<view class="flex-sub main">
+			<mescroll-uni :down="downOption" @down="downCallback" :up="upOption" @up="upCallback" @init="mescrollInit" :fixed="false">
+				<goodsitem class="goods-item" v-for="(item, index) in 10" :key="index" :goodsinfo="item" @showMail="showMail"
+				 @buygoods="buygoods"></goodsitem>
+			</mescroll-uni>
+		</view>
+		<!-- 查看店铺 -->
+		<view class="cu-modal bottom-modal" :class="isShowShop?'show':''">
+			<view class="cu-dialog bg-white">
+				<view class="cu-bar ">
+					<view class="action title">查看店铺</view>
+					<view class="action cuIcon-close" @tap="hideModal"></view>
+				</view>
+				<view class="action-list">
+					<view class="action-item">进入店铺</view>
+					<view class="action-item">查看评价</view>
+				</view>
+			</view>
+		</view>
+		<!-- 查看评价 -->
+		<view class="cu-modal" :class="isShowReply?'show':''">
+			<view class="cu-dialog bg-white">
+				<view class="cu-bar solids-bottom">
+					<view class="action title">他的评价</view>
+					<view class="action cuIcon-close" @tap="hideModal"></view>
+				</view>
+				<view class="padding-lg replylist">
+					<!-- <cmt-reply v-for="(item,index) in 2" :key="index"></cmt-reply> -->
+					<mescroll-empty :option="emptyoption"></mescroll-empty>
+				</view>
+				<view class="cu-modal-ft">点击商品详情查看更多评价 ></view>
+			</view>
+		</view>
+		<!-- 商品详情 -->
 		<view class="cu-modal bottom-modal" :class="showDetails?'show':''" @tap="showDetails=false">
-			<view class="cu-dialog" @tap.stop="">
+			<view class="cu-dialog bg-white" @tap.stop="" style="padding-top: 20px;">
 				<!-- 关闭 -->
-				<span class="close" @tap="showDetails=false"></span>
-				<view>
-					<div class="mail-item ">
-						<div class="flex">
-							<div class="imgbox">
-								<image src="/static/demo/demo.png" mode="widthFix"></image>
-							</div>
-							<div class="info flex-sub">
-								<div class="name">
-									完美鲜花批发
-								</div>
-								<div><span>库存:489</span><span class="ml25">销量:54</span></div>
-								<div class="flex justify-between align-center mt20">
-									<span class="price">
-										<em>￥19.8</em>/扎
-									</span>
-									<shophandle :isShowMinus="true"></shophandle>
-								</div>
-							</div>
+				<view class="action cuIcon-close close" @tap="showDetails=false"></view>
+				<view class="mail-item" style="max-height: 20vh;overflow: auto;">
+					<div class="flex align-center">
+						<div class="imgbox">
+							<image src="/static/demo/1.png" mode="widthFix"></image>
 						</div>
-						<div class="flex align-center mt20">
-							<div class="tag tag1"></div>
+						<div class="info flex-sub">
+							<div class="name">
+								完美鲜花批发
+							</div>
+							<div class="price margin-bottom margin-top">
+								￥19.8
+							</div>
+							<div><span>库存:489</span><span class="margin-left">销量:54</span></div>
+
+						</div>
+					</div>
+					<div class="flex justify-between">
+						<div class="flex align-center margin-top-sm">
+							<div class="tag tag1">自营</div>
 							<div class="state">关注的店</div>
 							<div class="mailname" @click="tapMailName">完美鲜花批发></div>
 						</div>
-						<div class="goodstag grid col-3 mt20">
-							<view>等级:B级</view>
-							<view>枝长:80CM</view>
-							<view>产地:云南昆明</view>
-							<view>优点:花头漂亮</view>
-							<view>瑕疵:刺多</view>
-							<view>成熟度:中熟</view>
-						</div>
+						<numberbox :value='num' @change="changeNum"></numberbox>
 					</div>
-					<div class="title">商品描述：</div>
-					<p>爱上你是我今生最大的幸福，想你是我最甜蜜的痛苦。</p>
-					<div class="btn">加入采购单</div>
+					<div class="goodstag grid col-3 margin-top-sm">
+						<view>等级:B级</view>
+						<view>枝长:80CM</view>
+						<view>产地:云南昆明</view>
+						<view>优点:花头漂亮</view>
+						<view>瑕疵:刺多</view>
+						<view>成熟度:中熟</view>
+					</div>
+					<view class="goodsinfo">
+						<div class="title">商品描述：</div>
+						<p>爱上你是我今生最大的幸福，想你是我最甜蜜的痛苦。</p>
+					</view>
+					<div class="addcarbtn">加入采购单</div>
 				</view>
 			</view>
 		</view>
 	</view>
+
 </template>
 
 <script>
 	import searchbar from '@/components/searchbar.vue';
 	import goodsitem from '@/components/goodsitem.vue';
-	import MescrollUni from '@/components/mescroll-uni/mescroll-uni.vue';
 	import tuiActionsheet from "@/components/actionsheet/actionsheet"
-	import shophandle from '@/components/shophandle.vue'
+	import Numberbox from '@/components/numberbox.vue'
+	import MescrollMixin from "@/components/mescroll-uni/mescroll-mixins.js"
+	import cmtReply from "@/components/cmt-reply"
+	import MescrollEmpty from "@/components/mescroll-uni/components/mescroll-empty"
 	export default {
 		data() {
 			return {
 				cateIndex: 0,
-				menulist: [{
-					name: '玫瑰',
-					num: 0
-				}, {
-					name: '玫瑰12',
-					num: 0
-				}],
-				downOption: {
-					use: true,
-					auto: false //是否在初始化后,自动执行下拉回调callback; 默认true
-				},
-				upOption: {
-					noMoreSize: 1,
-					page: {
-						num: 0,
-						size: 10
-					},
-				},
-				mescroll: null, //mescroll实例对象
+				menulist: ['全部', '玫瑰', '百合', '康乃馨', '梅花', '牡丹', '百合', '康乃馨', '梅花', '牡丹'],
 				showActionSheet: false,
 				itemList: [{
 					text: "只买TA的产品",
@@ -111,23 +135,29 @@
 					text: "查看TA的口碑",
 					color: "#1a1a1a"
 				}],
-				showDetails: false
+				showDetails: true, //
+				isShowShop: false, //查看店铺
+				isShowReply: false, //查看评价
+				emptyoption: {
+					icon: '/static/empty.png',
+					tip: '暂无产品评价'
+				}
 			};
 		},
 		components: {
 			searchbar,
 			goodsitem,
-			MescrollUni,
 			tuiActionsheet,
-			shophandle
+			Numberbox,
+			cmtReply,
+			MescrollEmpty
 		},
+		mixins: [MescrollMixin],
 		methods: {
 			NavChange: function(e) {
 				this.PageCur = e.currentTarget.dataset.cur;
 			},
-			mescrollInit(mescroll) {
-				this.mescroll = mescroll;
-			},
+
 			/*下拉刷新的回调, 有三种处理方式: */
 			downCallback(mescroll) {
 				mescroll.resetUpScroll(); // 重置列表为第一页 (自动执行 page.num=1, 再触发upCallback方法 )
@@ -157,163 +187,156 @@
 		height: 100%;
 		overflow: hidden;
 		position: relative;
+		background: #ededed;
 	}
 
-	.mt20 {
-		margin-top: 20upx;
-	}
-
-	.grid .submenu {
-		width: 170upx;
-		margin-right: 2upx;
-		text-align: center;
-		color: #6D6D6D;
-		height: 100%;
-		overflow: hidden;
+	.topbar {
+		height: 110upx;
 		position: relative;
-		/* border-right: 1px solid #eee; */
-		/* border-top: 1px solid #eee; */
-		background: #FBFBFB;
-	}
+		border-bottom: 2upx solid #ededed;
 
-	.grid .submenu:after {
-		content: '';
-		position: absolute;
-		right: 0;
-		width: 2upx;
-		top: 0;
-		bottom: 0;
-		background: #DBDBDB;
-	}
-
-	.grid .submenu .submenu-item {
-		height: 100upx;
-		border-bottom: 1px solid transparent;
-		padding: 0 20upx;
-		text-align: center;
-		position: relative;
-		z-index: 99;
-	}
-
-	.grid .submenu .submenu-item.active {
-		color: #FF5454;
-		background: #fff;
-		border-bottom: 1px solid #DBDBDB;
-	}
-
-	.grid .submenu .submenu-item.active:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		width: 6upx;
-		height: 46upx;
-		top: 50%;
-		transform: translateY(-50%);
-		background: #ff5454;
-	}
-
-	.grid .submenu .submenu-item.active:after {
-		content: '';
-		position: absolute;
-		right: -10upx;
-		width: 20upx;
-		top: 0;
-		bottom: 0;
-		background: #fff;
-	}
-
-	.grid .submenu .submenu-item span {
-		line-height: 100upx;
-		display: block;
-		width: 100%;
-	}
-
-	.grid .submenu .submenu-item i {
-		display: none;
-		font-style: normal;
-		color: #fff;
-		background: #ff5454;
-		position: absolute;
-		top: 0;
-		right: 0;
-		border-radius: 20upx;
-		padding: 2upx 12upx;
-		font-size: 20upx;
-		line-height: 25upx;
-	}
-
-	.grid .submenu .submenu-item i.show {
-		display: block;
-	}
-
-	.filterbar {
-		line-height: 100upx;
-		overflow: hidden;
-		padding-right: 30upx;
-	}
-
-	.filterbar .filter-item {
-		float: right;
-		color: #ADADAD;
-		font-size: 26upx;
-		margin-left: 50upx;
-	}
-
-	.cu-dialog {
-		padding: 50upx 30upx 70upx;
-		background: #fff;
-		position: relative;
-		text-align: left;
-
-		.close {
-			position: absolute;
-			right: 52upx;
-			top: 35upx;
-			height: 44upx;
-			width: 44upx;
-			background: url(../../static/window_close@2x.png) no-repeat center center;
-			background-size: 100% auto;
-			z-index: 99;
+		&>.flex-sub {
+			width: 200rpx;
+			padding-left: 25upx;
+			padding-right: 5upx;
 		}
 
-		.title {
-			color: #1D1D1D;
+		.nav {
+			height: 106upx;
+		}
+
+		.scrollview {
+			line-height: 106upx;
+			color: #000;
+			font-weight: blod;
 			font-size: 28upx;
 
-			&+p {
-				color: #808080;
-				font-size: 25upx;
-				margin: 24upx 0 58upx
+			span {
+				position: relative;
+				display: inline-block;
+
+				&+span {
+					margin-left: 50upx;
+				}
+
+				&.active {
+					color: #fc733b;
+					font-size: 32upx;
+				}
+
+
 			}
 		}
 
-		.btn {
-			width: 520upx;
-			height: 80upx;
-			background: rgba(251, 89, 95, 1);
-			box-shadow: 0 11upx 16upx 0 rgba(251, 89, 95, 0.17);
-			border-radius: 8upx;
-			margin: 0 auto;
-			color: #fff;
-			font-size: 28upx;
-			line-height: 80upx;
+		.line {
+			width: 2upx;
+			height: 55upx;
+			display: block;
+			background: url(../../static/icon23.png) no-repeat center center;
+			background-size: 2upx auto;
+		}
+
+		.arrow {
+			width: 86upx;
+			height: 100%;
+			display: block;
+			background: url(../../static/icon22.png) no-repeat center center;
+			background-size: 36upx auto;
+		}
+	}
+
+	.filterbar {
+		height: 70upx;
+
+		&>span {
+			width: 25%;
+			color: #727272;
 			text-align: center;
+			font-size: 28upx;
+
+			&.active {
+				color: #fc743c;
+			}
+
+			image {
+				width: 10upx;
+				margin-left: 10upx;
+			}
+
+			&.filter {
+				image {
+					width: 18upx;
+				}
+			}
+		}
+	}
+
+	.main {
+		overflow: auto;
+		margin-top: 30upx;
+	}
+
+	.action-list {
+		.action-item {
+			color: #ff6202;
+			font-size: 26upx;
+			line-height: 140upx;
+			text-align: center;
+			border-top: 1px solid #eee;
+		}
+	}
+
+	.cu-modal {
+		.cu-dialog {
+			width: 600upx;
+			text-align: left;
+			position: relative;
+		}
+
+		.title {
+			color: #000;
+			font-size: 28upx;
+			font-weight: blod;
+		}
+
+		.cuIcon-close {
+			font-size: 40upx;
+			color: #303030;
+		}
+
+		.cu-modal-ft {
+			color: #fff;
+			text-align: center;
+			font-size: 24upx;
+			line-height: 70upx;
+			background: #ff6202;
+		}
+
+		.replylist {
+			max-height: 300px;
+			overflow: auto;
+		}
+		.close{
+			position: absolute;
+			right: 56upx;
+			top: 30upx;
 		}
 	}
 
 	.mail-item {
 		text-align: left;
-		padding: 22upx 15upx;
 		font-size: 24upx;
 		color: #9F9F9F;
+		padding: 40upx 50upx;
 		position: relative;
+	
 
 		.imgbox {
-			width: 140upx;
+			width: 200upx;
 			background: #fff;
 			border: 1px solid #E8E8E8;
 			border-radius: 10upx;
-			margin-right: 16upx;
+			margin-right: 50upx;
 
 			image {
 				width: 100%;
@@ -321,33 +344,29 @@
 		}
 
 		.name {
-			font-size: 26upx;
-			color: #FF9518;
-			margin-bottom: 18upx;
+			font-size: 34upx;
+			color: #000;
+			font-weight: bold;
 		}
 
 		.price {
-			font-size: 22upx;
-			color: #C1C1C1;
-
-			em {
-				font-style: normal;
-				display: inline-block;
-				color: #FD3C3E;
-				font-size: 28upx;
-			}
+			font-style: normal;
+			display: inline-block;
+			color: #e03d3e;
+			font-size: 38upx;
 		}
 
-		.btn {
-			background: #FF9518;
-			font-size: 24upx;
+		.addcarbtn {
+			font-size: 30upx;
 			color: #fff;
-			border-radius: 8upx;
-			width: 110upx;
-			height: 48upx;
+			border-radius: 16upx;
+			width: 100%;
+			height: 100upx;
 			display: block;
 			text-align: center;
-			line-height: 48upx;
+			line-height: 100upx;
+			margin-top: 20upx;
+			background-image: linear-gradient(#fb9449, #fc753c);
 		}
 
 		.state {
@@ -358,28 +377,15 @@
 		}
 
 		.tag {
-			width: 66upx;
-			height: 23upx;
-			background: no-repeat center center;
-			background-size: 100% auto;
-		}
-
-		.tag1 {
-			background-image: url(/static/proprietary_label@2x.png);
-		}
-
-		.tag2 {
-			background-image: url(/static/brand_label@2x.png);
-		}
-
-		.tag3 {
-			background-image: url(/static/base_tag@2x.png);
-		}
-
-		.tag4 {
-			width: 22upx;
-			height: 21upx;
-			background-image: url(/static/base_tag@2x.png);
+			color: #fff;
+			background: #e60012;
+			line-height: 25upx;
+			height: 25upx;
+			display: inline-block;
+			padding: 0 10upx;
+			border-radius: 5upx;
+			font-size: 16upx;
+			margin-right: 10upx;
 		}
 
 		.mailname {
@@ -389,15 +395,33 @@
 		}
 
 		.goodstag {
-			background: #F5F5F5;
-			padding: 25upx 10upx;
-			border-radius: 8upx;
-			color: #515151;
+			background: #f2f3f7;
+			margin-top: 30upx;
+
+			padding: 5upx 20upx;
+
+			&>view {
+				width: 30%;
+				padding: 10upx 0;
+
+				&:nth-child(3n+2) {
+					width: 40%;
+				}
+			}
+		}
+
+		.goodsinfo {
 			font-size: 20upx;
 
-			view {
-				padding: 5upx 0;
+			.title {
+				color: #000;
+				font-size: 28upx;
 			}
+
+			p {
+				margin: 20upx 0;
+			}
+
 		}
 	}
 </style>

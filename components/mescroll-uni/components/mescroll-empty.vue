@@ -63,14 +63,14 @@ export default {
 }
 
 .mescroll-empty .empty-icon {
-	width: 280rpx;
-	height: 280rpx;
+	width: 380rpx;
+	/* height: 280rpx; */
 }
 
 .mescroll-empty .empty-tip {
 	margin-top: 20rpx;
-	font-size: 24rpx;
-	color: gray;
+	font-size: 26rpx;
+	color: #7a7a7a;
 }
 
 .mescroll-empty .empty-btn {

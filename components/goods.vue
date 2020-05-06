@@ -1,6 +1,6 @@
 <template>
-	<view class="card">
-		<div class="tjtag">{{goodsinfo.tjtag==2?'平台推荐':'今日特惠'}}</div>
+	<view class="goodsinfo" :class="{card:type==0}">
+		<div class="tjtag" v-if="type==0">{{goodsinfo.tjtag==2?'平台推荐':'今日特惠'}}</div>
 		<div class="flex">
 			<div class="imgbox">
 				<image src="/static/demo/img.jpg" mode="widthFix"></image>
@@ -49,15 +49,19 @@
 			goodsinfo: {
 				type: String,
 				default: {}
+			},
+			type: {
+				type: [String, Number],
+				default: 0
 			}
 		},
 		filters: {
 			filtertag(value) {
 				if (value == 1) {
 					return '自营'
-				}else if(value==2){
+				} else if (value == 2) {
 					return '品牌'
-				}else{
+				} else {
 					return '基地'
 				}
 			}
@@ -66,13 +70,24 @@
 </script>
 
 <style lang="scss">
-	.card {
-		border-radius: 30upx;
+	.goodsinfo {
+		background: #fff;
+		color: #000;
 		position: relative;
 		overflow: hidden;
-		padding: 35upx 20upx;
-		background: #fff;
-		colocolor: #000;
+		border-top: 1px solid #ededed;
+		padding: 30upx 0;
+
+		&.card {
+			border-radius: 30upx;
+			border-top: none;
+			padding: 35upx 20upx;
+
+		}
+
+		&:not(last-child) {
+			padding-bottom: 0;
+		}
 
 		.tjtag {
 			position: absolute;

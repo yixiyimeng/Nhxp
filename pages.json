@@ -176,8 +176,8 @@
 		"navigationBarTextStyle": "black"
 	},
 	"tabBar": {
-		"color": "#b8b8b8",
-		"selectedColor": "#ff5454",
+		"color": "#6b6b6b",
+		"selectedColor": "#000",
 		"borderStyle": "black",
 		"backgroundColor": "#fff",
 		"list": [{
@@ -189,25 +189,25 @@
 			{
 				"pagePath": "pages/list/list",
 				"iconPath": "static/tabbar/mall_default.png",
-				"selectedIconPath": "static/tabbar/shopping_selected.png",
+				"selectedIconPath": "static/tabbar/mall_selectd.png",
 				"text": "分类"
 			}, {
 				"pagePath": "pages/follow/follow",
-				"iconPath": "static/tabbar/mall_default.png",
-				"selectedIconPath": "static/tabbar/shopping_selected.png",
+				"iconPath": "static/tabbar/follow_default.png",
+				"selectedIconPath": "static/tabbar/follow_selected.png",
 				"text": "关注"
 			},
 			{
-				"pagePath": "pages/order/order",
-				"iconPath": "static/tabbar/purchase_default@2x.png",
-				"selectedIconPath": "static/tabbar/purchase_selected@2x.png",
+				"pagePath": "pages/car/car",
+				"iconPath": "static/tabbar/purchase_default.png",
+				"selectedIconPath": "static/tabbar/purchase_selecte.png",
 				"text": "采购单"
 			},
 
 			{
 				"pagePath": "pages/mine/mine",
-				"iconPath": "static/tabbar/my_default@2x.png",
-				"selectedIconPath": "static/tabbar/my_selected@2x.png",
+				"iconPath": "static/tabbar/my_default.png",
+				"selectedIconPath": "static/tabbar/my_selected.png",
 				"text": "我的"
 			}
 		]

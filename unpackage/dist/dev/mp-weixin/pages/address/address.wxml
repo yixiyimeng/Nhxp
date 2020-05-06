@@ -1,1 +1,2 @@
-<view class="flex flex-direction pageview"><view class="list flex-sub"><mescroll-uni class="vue-ref" vue-id="1" fixed="{{false}}" data-ref="mescrollRef" data-event-opts="{{[['^init',[['mescrollInit']]],['^down',[['downCallback']]],['^up',[['upCallback']]]]}}" bind:init="__e" bind:down="__e" bind:up="__e" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{5}}" wx:for-item="item" wx:for-index="index" wx:key="index"><address-item vue-id="{{('2-'+index)+','+('1')}}" bind:__l="__l"></address-item></block></mescroll-uni></view><view class="addbtn bg-white">+ 新增收货地址</view></view>
+<import src="./address.vue.wxml" />
+    <template is="36db681f" data="{{ ...$root['0'], $root }}"/>

@@ -1,65 +1,45 @@
 <template>
-	<view class="goodsbox">
-		<div class="goods flex">
-			<div class="imgbox">
-				<image src="/static/demo/1.png" mode="widthFix"></image>
+	<view class="card">
+		<div class="tjtag">{{goodsinfo.tjtag==2?'平台推荐':'今日特惠'}}</div>
+		<div class="flex bg-white">
+			<div>
+				<div class="imgbox">
+					<image src="/static/demo/img.jpg" mode="widthFix"></image>
+				</div>
+				<view class="margin-top-xs">共<text class="shopnum">1</text>家供应商报价</view>
 			</div>
 			<div class="flex-sub">
-				<div class="name">戴安娜玫瑰花</div>
-				<div>
-					<span>20支/扎</span>
-					<span class="ml40">粉色</span>
+				<div class="flex justify-between">
+					<text class="name">多头玫瑰</text>
+					<text class="oldprice">平均价￥15.80</text>
 				</div>
-				<div class="price">
-					<span class="red">￥</span>
-					<span class="red ft38">19.8</span>
-					<span>起</span>
+				<div class="flex justify-between align-center padding-top-sm padding-bottom-sm">
+					<div>颜色：红色</div>
+					<div class="price">￥15.80</div>
 				</div>
-				<div class="btn flex align-center justify-center" :class="{'active':isOpen}" @click="tapOpen">
-					{{isOpen?'收起':'采购'}}
+				<div class="flex justify-between align-end solid-top padding-top">
+					<div class="num">
+						<div>库存：123</div>
+						<div class="margin-top-sm">销量：2354</div>
+					</div>
+					<view class="buybtn" :class="{'open':isOpen}" @tap="tapOpen">
+						<text>选 购</text>
+						<image src="/static/icon26.png" mode="widthFix" v-if="!isOpen"></image>
+						<image src="/static/icon27.png" mode="widthFix" v-else></image>
+					</view>
 				</div>
 			</div>
 		</div>
 		<template v-if="isOpen">
-			<div class="maillist" :class="{active:isOpenitem}">
-				<div class="mail-item ">
-					<div class="flex">
-						<div class="imgbox">
-							<image src="/static/demo/demo.png" mode="widthFix"></image>
-						</div>
-						<div class="info flex-sub">
-							<div class="name">
-								完美鲜花批发
-							</div>
-							<div><span>库存:489</span><span class="ml25">销量:54</span></div>
-							<div class="flex justify-between align-center mt20">
-								<span class="price">
-									<em>￥19.8</em>/扎
-								</span>
-								<span class="btn" @tap="buygoods">采购</span>
-							</div>
-						</div>
-					</div>
-					<div class="flex align-center mt20">
-						<div class="tag tag1"></div>
-						<div class="state">关注的店</div>
-						<div class="mailname" @click="tapMailName">完美鲜花批发></div>
-					</div>
-					<div class="goodstag grid col-3 mt20">
-						<view>等级:B级</view>
-						<view>枝长:80CM</view>
-						<view>产地:云南昆明</view>
-						<view>优点:花头漂亮</view>
-						<view>瑕疵:刺多</view>
-						<view>成熟度:中熟</view>
-					</div>
-				</div>
+			<div class="maillist margin-top" :class="{active:isOpenitem}">
+				<goods type="1" v-for="(item, index) in 2" :key="index"></goods>
 			</div>
 		</template>
 	</view>
 </template>
 
 <script>
+	import goods from "./goods.vue"
 	export default {
 		data() {
 			return {
@@ -67,10 +47,27 @@
 				isOpenitem: false
 			};
 		},
-		methods: {
-			tapMailName() {
-				this.$emit('showMail')
+		components: {
+			goods
+		},
+		props: {
+			goodsinfo: {
+				type: Object,
+				default: {}
 			},
+		},
+		filters: {
+			filtertag(value) {
+				if (value == 1) {
+					return '自营'
+				} else if (value == 2) {
+					return '品牌'
+				} else {
+					return '基地'
+				}
+			}
+		},
+		methods: {
 			tapOpen() {
 				if (this.isOpen) {
 					this.isOpenitem = false;
@@ -83,248 +80,110 @@
 						this.isOpenitem = true
 					})
 				}
-
 			},
-			buygoods(){
-				this.$emit('buygoods')
-			}
 		}
 	}
 </script>
 
-<style lang="scss" scoped>
-	.ml40 {
-		margin-left: 40upx;
-	}
-
-	.ml25 {
-		margin-left: 25upx;
-	}
-
-	.mt20 {
-		margin-top: 20upx;
-	}
-
-	.mt30 {
-		margin-top: 30upx;
-	}
-
-	.goodsbox {
-		padding: 0 30upx 15upx 22upx;
-		box-shadow: 0 4upx 16upx 0 rgba(213, 213, 213, 1);
+<style lang="scss">
+	.card {
+		border-radius: 30upx;
+		position: relative;
 		overflow: hidden;
+		padding: 35upx 20upx;
 		background: #fff;
+		margin: 0 20upx 20upx;
+		color: #000;
 
-		&+.goodsbox {
-			margin-top: 20upx;
+		.shopnum {
+			color: #e53f3f;
+			font-size: 30upx;
 		}
 
-		.goods {
-			font-size: 24upx;
-			color: #9F9F9F;
-			position: relative;
-			padding: 14upx;
-			border-radius: 8upx;
+		.tjtag {
+			position: absolute;
+			left: 30upx;
+			top: 0;
+			height: 58upx;
+			width: 58upx;
+			border-radius: 0 20upx 0 20upx;
+			color: #fff;
+			font-size: 16upx;
+			padding: 10upx;
+			background: #e60012;
 			z-index: 99;
-			background: #fff;
-			padding-top: 15upx;
+			text-align: center;
 
-			.imgbox {
-				width: 196upx;
-				height: 196upx;
-				overflow: hidden;
-				margin-right: 20upx;
-				border-radius: 10upx;
-
-				image {
-					display: block;
-					width: 100%;
-					height: 100%;
-				}
-			}
-
-			.name {
-				color: #2E2E2E;
-				font-size: 28upx;
-				margin-bottom: 20upx;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-			}
-
-			.btn {
-				border: 1px solid #FF5454;
-				border-radius: 8upx;
-				line-height: 48upx;
-				width: 120upx;
-				text-align: center;
-				position: absolute;
-				right: 18upx;
-				bottom: 20upx;
-				color: #FF5454;
-
-				&:after {
-					content: '';
-					height: 8upx;
-					width: 12upx;
-					margin-left: 10upx;
-					display: block;
-					background: url(../static/shopping_arrow@2x.png) no-repeat center center;
-					background-size: 100% auto;
-					transition: all .3s;
-				}
-
-				&.active:after {
-					transform: rotate(180deg);
-				}
-			}
-
-			.price {
-				margin-top: 60upx;
-				font-size: 22upx;
-				color: #DADADA;
-
-				.red {
-					color: #FD3C3E;
-				}
-
-				.ft38 {
-					font-size: 38upx;
-					margin-right: 8upx;
-				}
+			&.tjtag1 {
+				background: #917bdd;
 			}
 		}
 
-		.maillist {
-			z-index: 0;
-			background: #EAEAEA;
-			transition: all .3s;
-			transform: translateY(-50%);
-			height: 0px;
-			overflow: hidden;
+		.name {
+			font-size: 30upx;
+			font-weight: bold;
+		}
 
-			&.active {
-				transform: translateY(0px);
-				height: auto;
-				transition: all .3s;
-			}
+		.oldprice {
+			color: #b5b8c1;
+			font-size: 24upx;
+			text-decoration: line-through;
 
-			.mail-item {
-				background: #F5F5F5;
+		}
 
-				padding: 22upx 15upx;
-				font-size: 24upx;
-				color: #9F9F9F;
-				position: relative;
+		.imgbox {
+			width: 191upx;
+			height: 191upx;
+			margin-right: 35upx;
 
-				&+.mail-item {
-					margin-top: 10upx;
-				}
-
-				&:before {
-					display: block;
-					content: '';
-					height: 24upx;
-					position: absolute;
-					left: 0;
-					right: 0;
-					top: -5upx;
-					background: url(/static/arrowbg.png) no-repeat center center;
-					background-size: 100% auto;
-				}
-
-				.imgbox {
-					width: 140upx;
-					background: #fff;
-					border: 1px solid #E8E8E8;
-					border-radius: 10upx;
-					margin-right: 16upx;
-
-					image {
-						width: 100%;
-					}
-				}
-
-				.name {
-					font-size: 26upx;
-					color: #FF9518;
-					margin-bottom: 18upx;
-				}
-
-				.price {
-					font-size: 22upx;
-					color: #C1C1C1;
-
-					em {
-						font-style: normal;
-						display: inline-block;
-						color: #FD3C3E;
-						font-size: 28upx;
-					}
-				}
-
-				.btn {
-					background: #FF9518;
-					font-size: 24upx;
-					color: #fff;
-					border-radius: 8upx;
-					width: 110upx;
-					height: 48upx;
-					display: block;
-					text-align: center;
-					line-height: 48upx;
-				}
-
-				.state {
-					color: #FF9518;
-					font-size: 22upx;
-					margin-left: 10upx;
-
-				}
-
-				.tag {
-					width: 66upx;
-					height: 23upx;
-					background: no-repeat center center;
-					background-size: 100% auto;
-				}
-
-				.tag1 {
-					background-image: url(/static/proprietary_label@2x.png);
-				}
-
-				.tag2 {
-					background-image: url(/static/brand_label@2x.png);
-				}
-
-				.tag3 {
-					background-image: url(/static/base_tag@2x.png);
-				}
-
-				.tag4 {
-					width: 22upx;
-					height: 21upx;
-					background-image: url(/static/base_tag@2x.png);
-				}
-
-				.mailname {
-					color: #7E7E7E;
-					font-size: 22upx;
-					margin-left: 10upx;
-				}
-
-				.goodstag {
-					background: #fff;
-					padding: 25upx 10upx;
-					border-radius: 8upx;
-					color: #515151;
-					font-size: 20upx;
-
-					view {
-						padding: 5upx 0;
-					}
-				}
+			image {
+				height: 100%;
+				width: 100%;
+				display: block;
 			}
 		}
+
+		.num {
+			color: #b3b6be;
+			font-size: 24upx;
+		}
+
+		.price {
+			color: #e03d3e;
+			font-size: 38upx;
+			font-weight: bold;
+		}
+
+		.buybtn {
+			color: #fc733b;
+			font-size: 30upx;
+			height: 60upx;
+			width: 150upx;
+			border-radius: 16upx;
+			border: 2upx solid #fc733b;
+			text-align: center;
+			line-height: 60upx;
+
+			text,
+			image {
+				vertical-align: middle;
+			}
+
+			image {
+				margin-left: 14upx;
+				width: 18upx;
+			}
+
+			&.open {
+				color: #fff;
+				background: #ff0000;
+				border: 2upx solid #ff0000;
+			}
+		}
+
+	}
+
+	.goodsinfo+.goodsinfo {
+		margin-top: 20upx;
 	}
 </style>

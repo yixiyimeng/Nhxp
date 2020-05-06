@@ -1,27 +1,27 @@
 
-page.data-v-8e7e6164 {
+page.data-v-2cf5ed02 {
 	background: #fff;
 }
-.cashoutlist .cashout-item.data-v-8e7e6164 {
+.cashoutlist .cashout-item.data-v-2cf5ed02 {
 	padding: 40rpx 30rpx;
 	color: #919191;
 	font-size: 26rpx;
 }
-.cashoutlist .cashout-item .num.data-v-8e7e6164 {
+.cashoutlist .cashout-item .num.data-v-2cf5ed02 {
 	color: #0E0B0E;
 	font-size:38rpx;
 	margin-bottom: 26rpx;
 }
-.cashoutlist .cashout-item .state.data-v-8e7e6164 {
+.cashoutlist .cashout-item .state.data-v-2cf5ed02 {
 	font-size: 32rpx;
 }
-.cashoutlist .cashout-item .state.state1.data-v-8e7e6164 {
+.cashoutlist .cashout-item .state.state1.data-v-2cf5ed02 {
 	color: #FF9518;
 }
-.cashoutlist .cashout-item .state.state2.data-v-8e7e6164 {
+.cashoutlist .cashout-item .state.state2.data-v-2cf5ed02 {
 	color: #19A967;
 }
-.cashoutlist .cashout-item .state.state3.data-v-8e7e6164 {
+.cashoutlist .cashout-item .state.state3.data-v-2cf5ed02 {
 	color: #FD3C3E;
 }
 

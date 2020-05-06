@@ -8,7 +8,7 @@
 		"es6": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
+	"libVersion": "2.7.0",
 	"appid": "touristappid",
 	"projectname": "Nhxp",
 	"simulatorType": "wechat",
@@ -39,15 +39,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "shop/feedback/feedback",
-					"pathName": "shop/feedback/feedback",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "shop/orderdetails/orderdetails",
-					"pathName": "shop/orderdetails/orderdetails",
+					"name": "pages/list/list",
+					"pathName": "pages/list/list",
 					"scene": null
 				}
 			]
