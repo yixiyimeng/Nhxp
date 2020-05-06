@@ -1,2 +1,1 @@
-<import src="./mine.vue.wxml" />
-    <template is="6edda055" data="{{ ...$root['0'], $root }}"/>
+<view><navigator url="/shop/apply/apply">申请入驻</navigator></view>
