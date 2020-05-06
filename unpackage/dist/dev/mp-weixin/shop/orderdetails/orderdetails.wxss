@@ -1,0 +1,87 @@
+page, .pageview {
+  height: 100%;
+  width: 100%;
+}
+.topbar {
+  color: #7F7F7F;
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+.topbar .text-black {
+    color: #2E2E2E;
+}
+.topbar > view {
+    margin-top: 28rpx;
+}
+.topbar .num {
+    font-size: 32rpx;
+    color: #FD3C3E;
+}
+.topbar .btn {
+    color: #fff;
+    background: #19A967;
+    width: 160rpx;
+    height: 60rpx;
+    border-radius: 8rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.list {
+  border-top: 12rpx solid #F8F8F8;
+  overflow: auto;
+  padding-bottom: 20rpx;
+  -webkit-overflow-scrolling: touch;
+}
+.list .goods-item {
+    margin: 20rpx 30rpx 0;
+    border-radius: 8rpx;
+    padding: 25rpx;
+    -webkit-box-shadow: 0px 4rpx 16rpx 0px #d5d5d5;
+            box-shadow: 0px 4rpx 16rpx 0px #d5d5d5;
+}
+.list .goods-item .name {
+      color: #A0A0A0;
+      font-size: 28rpx;
+}
+.list .goods-item .price {
+      color: #FD3C3E;
+      font-size: 32rpx;
+}
+.list .goods-item .imgbox {
+      width: 140rpx;
+      height: 140rpx;
+      border-radius: 10rpx;
+      margin-right: 24rpx;
+      overflow: hidden;
+}
+.list .goods-item .imgbox image {
+        height: 100%;
+        width: 100%;
+}
+.list .goods-item .goodsname {
+      color: #232323;
+      font-size: 32rpx;
+}
+.list .goods-item .goodsnum {
+      color: #9F9F9F;
+      font-size: 26rpx;
+      margin: 20rpx 0;
+}
+.list .goods-item .goodsprice {
+      font-size: 24rpx;
+      color: #C0C0C0;
+}
+.list .goods-item .goodsprice .num {
+        color: #FD3C3E;
+}
+.goodstag {
+  background: #F4F4F4;
+  padding: 25rpx 10rpx;
+  border-radius: 8rpx;
+  color: #515151;
+  font-size: 24rpx;
+}
+.goodstag view {
+    padding: 5rpx 0;
+}
+

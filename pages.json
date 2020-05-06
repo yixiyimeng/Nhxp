@@ -152,6 +152,16 @@
 				"style": {
 					"navigationBarTitleText": "订单记录"
 				}
+			}, {
+				"path": "feedback/feedback",
+				"style": {
+					"navigationBarTitleText": "反馈结果"
+				}
+			}, {
+				"path": "orderdetails/orderdetails",
+				"style": {
+					"navigationBarTitleText": "订单详情"
+				}
 			}
 		]
 	}],
