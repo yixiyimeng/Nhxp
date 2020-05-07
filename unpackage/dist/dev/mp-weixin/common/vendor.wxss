@@ -1,0 +1,472 @@
+
+.nobg{
+		color: #fff;
+}
+.bg-green{
+		background: #19A967;
+}
+
+.goodsinfo {
+  background: #fff;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #ededed;
+  padding: 30rpx 0;
+}
+.goodsinfo.card {
+    border-radius: 30rpx;
+    border-top: none;
+    padding: 35rpx 20rpx;
+}
+.goodsinfo:not(last-child) {
+    padding-bottom: 0;
+}
+.goodsinfo .tjtag {
+    position: absolute;
+    left: 30rpx;
+    top: 0;
+    height: 58rpx;
+    width: 58rpx;
+    border-radius: 0 20rpx 0 20rpx;
+    color: #fff;
+    font-size: 16rpx;
+    padding: 10rpx;
+    background: #e60012;
+    z-index: 99;
+    text-align: center;
+}
+.goodsinfo .tjtag.tjtag1 {
+      background: #917bdd;
+}
+.goodsinfo .name {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.goodsinfo .imgbox {
+    width: 191rpx;
+    height: 191rpx;
+    margin-right: 35rpx;
+}
+.goodsinfo .imgbox image {
+      height: 100%;
+      width: 100%;
+      display: block;
+}
+.goodsinfo .num {
+    color: #b3b6be;
+    font-size: 24rpx;
+    padding: 20rpx 0 30rpx;
+    border-bottom: 1px solid #f2f3f7;
+}
+.goodsinfo .price {
+    color: #e03d3e;
+    font-size: 38rpx;
+    font-weight: bold;
+}
+.goodsinfo .shopinfo {
+    font-size: 20rpx;
+    color: #666;
+    margin-top: 10rpx;
+    position: relative;
+}
+.goodsinfo .shopinfo .link {
+      color: #000;
+      margin-left: 12rpx;
+}
+.goodsinfo .shopinfo .tag {
+      color: #fff;
+      background: #e60012;
+      line-height: 25rpx;
+      height: 25rpx;
+      display: inline-block;
+      padding: 0 10rpx;
+      border-radius: 5rpx;
+      font-size: 16rpx;
+      margin-right: 10rpx;
+}
+.goodsinfo .shopinfo .favstate {
+      color: #fb8442;
+}
+.goodsinfo .shopinfo .btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #fff;
+      font-size: 24rpx;
+      width: 150rpx;
+      line-height: 60rpx;
+      border-radius: 15rpx;
+      text-align: center;
+      background-image: -webkit-gradient(linear, left top, right top, from(#fe8c2d), to(#fe5504));
+      background-image: -o-linear-gradient(left, #fe8c2d, #fe5504);
+      background-image: linear-gradient(90deg, #fe8c2d, #fe5504);
+}
+.goodsinfo .info {
+    background: #f2f3f7;
+    margin-top: 30rpx;
+    padding: 5rpx 20rpx;
+}
+.goodsinfo .info > view {
+      width: 30%;
+      padding: 10rpx 0;
+}
+.goodsinfo .info > view:nth-child(3n+2) {
+        width: 40%;
+}
+.goodsinfo .fav,
+  .goodsinfo .share {
+    height: 40rpx;
+    width: 40rpx;
+    background: no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+}
+.goodsinfo .fav {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAhCAYAAABa+rIoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpERkJGNjQ0Njg4NTAxMUVBOEJDQThGOUUyMjExNjI5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpERkJGNjQ0Nzg4NTAxMUVBOEJDQThGOUUyMjExNjI5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRGQkY2NDQ0ODg1MDExRUE4QkNBOEY5RTIyMTE2Mjk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRGQkY2NDQ1ODg1MDExRUE4QkNBOEY5RTIyMTE2Mjk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+kEZA2gAABYBJREFUeNq0mF1oXFUQx+/ebJLNZjVrTFuaGk26lppGJaKgqK2IH+iLqA8WFD8fpJgKGvulUqRVrCApiEERH0RjnxTpo1IEpTaNVatBjKYWxaYPFWursZvvTfzNMrMcr3dz7671wHA+7pw5//OfOXPObqK9vd1bWFjwGhoavNraWm9ubs6T4vt+B9WNiUTiWurLkHakDvkV+QE5iAwVCoVP0fGs0F5CdTv11dRXIKtoj09PT987Pz//OeLNzs4WdRsbG5+tq6t7kLEtYNjr2PCw6yXCwPFxW01NzS4ZF0WpbZK1rdDfj9yNnGRDvejsQDL6rTQPAI8gb6HjYdvmnkayND+ivs1sio7gSAYWamHi+xi7wcYw+D39n2mO0M7TzqEnbKxh7BwMraV/GPmasTsMFHKU/k90R2HheD6f3yNswFYRnOoc57uA+90LKUnHWBMLfQOAFbrjjzG2Q5hJJpNFHTFuhtFrFoaZs5m6Df02de8wu95Mvc8YKrKADfGO1OJa48M4cF1qYeLLQmKESZ/QXiGUUr8DkJv5vt/dSSC2TkmssLAwN6Nx8i5j3fT3uW4VQOl02iO+guTMql4+aL84T2hmcDugupXB7SzwQrkYC4IF3GfUqwHQSntQ4ja4GWX7YiQlRDqMZVSvVQ6OqDoePZPo6uqSADxBZxmghomNbqHdXCCuNLfKuDJrMVpytejMzMyU3CbAZFzbT6P+oldZmRKEd7HIMlmUI75TFtS2Zy6vpMgcAWhtZa/Tq7ykxMp6jZdT1B8IY84hWdStUcWCG9sPywFh0ynsFZwD8DxygebM19WdTEkkYfx0UhOsZ6crGJT/BZxTCtgZCBl/TMDx7SvqAXftogcYWKr0j7jx5CZEN8bOckkpw9kw27580/ZcmIKb5SuNv0pLMIzErX8i58vdGXTpv3YCi5ZAK2XRTa4OmCZtNoXpi1uP0l6J4nV26UftLixhRgYdKce5GWyzx5ALGT/iblZ0izFHYy/uupWxNShdw+BQ1MLGgr0egt/sinNjVlJTMODp30mzC/2DYWsmcrncuaSPPzCSYKG3SaQPLQYu+EoxkdymL5rSs8vsWLJ27QqLcp0J+HKeSKIwTv0ecg+K6zH02sTExCF3UtgptiIsyb1pNwTvthKbtpGweBMdscv6mTOUIPji/I6ODjG8KpVKHdF3F/anV/PtF3ObMVLudNXX1xffgmyqdMVFxa3oca/3M+8+NtUrb73gGr4sDpgfqR/QHdbj5kHALrf7tRxrxqowxuY9u/riAIPtXbDWI+856nWyQXGzK74Yk0XY9cDU1NQT6sJWZBgjbcETthjIqINkTAOsn81vU9tjELNRNigecsV3ntHe5OTkKwDcrQwuQQ7zefnZuBmMMbzxEsB6NC5HJYVR58M25rsJVhl8CpAb1D0t0P0dru2Mw2AMxl7F3la1NcKYvFbGyib9MPcQg2/AYL/2z8tkMl9yKi8K5rQKGeuDsY3Slt8OyE3OozManJu7YO9xWNygrKYFYKUMOozthrFenXtIGTsRNd9f7AaAPWGwT1+zLcpgLg6DDmMS/E8q0N+QW+QJHmdzftQVhYs3sUiPJtM0uWkwikGHsWLwqysPIJfzeTwu836cFCG3BrJJE+xSZfCSMAYDjG1VYCeRdXFcGRtcoPQhW9TFEoMHYHCly6CbYC1dyCsXudL9bfp/gJOFXqZ6VAE2A3AYBjuVnX8kWGV1jLGrqI9Vk4L8KlLDm8hOBQi+zBe4ulnAlEmwVZdklfOeY+FRAO4BWKMcEgAN6T9GlmAvjcpjUaUmm81G3pvy4gi5Xr5F6pG1AGwh/roVmCTY6+OmC3tWOb9xq3droDyD0fsR+d/kL/ofxk2wccrfAgwAoM3fMsdITloAAAAASUVORK5CYII=);
+    margin-right: 30rpx;
+}
+.goodsinfo .share {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMEFDQjU3RTg4NTExMUVBQjg2REE5RTRGNDM1N0FDOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMEFDQjU3Rjg4NTExMUVBQjg2REE5RTRGNDM1N0FDOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjAwQUNCNTdDODg1MTExRUFCODZEQTlFNEY0MzU3QUM4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAwQUNCNTdEODg1MTExRUFCODZEQTlFNEY0MzU3QUM4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+P229bAAABfFJREFUeNqsWFtMXFUUvQyX9zAwQgKMIZkSMEVTsdp+9EOt+mWkNEYDtlrTaj80xp9K/KgPbDTUGHx8+mNiYpMSLbTaWD+MbbTWSmNj26Bi0ahgjSKhPOU5g2vd7D05Hu6dS6gn2TlnzmPvdfbr7Ds59fX1Dls6nXby8vKcaDTqLC8ve6Tzrut6v5eWlpxIJLIlNzf3FiwlQTdhPpmTk5OP8bugTsdqPEcebDi7Yk3lsLlOSDM27wKopyF4M3+g99bYS3sWQjuda2ihYHCbJ9G1o6+zbnsGQL7Gzyugv/D7tALXXjVhgV4TmDgYvAWGj6oW0D6CqT5DfxTzw6ohu3GORDCmGdYKJglGJ8FwnQDpn52d3Quf6lM7w298TUoAq9GCrxXoXKRUKqWOdj2YXSQQMl9YWGhHvwHrfeatA0yaze9qce4r0JFAzRQUFGSiBrctw+az+Bnj3OLi4i6Y5RCjKUiQnjWd2jaZaJHRt0XmPsS+7SsuU1JS4hQXF3shjf49bKoVIDugjUPZQCiQML8gGACggz9PRYFa8PuYFa2Oq7cB090QvE027Me4mxphbgnKDaoRyxxx0E7wvRl9FSiKefzMSWE8YWzfjrnXIeeZjBaLioq8ZNfQ0DCFG0ShjV9wuI4aUV8iqJmZGYcm1Xnbb8SXngK9LIBCG/ZeAq8m5eXG43EKeRhCoiKk2YwMjRqOCUxU7se4G9Rm+A0d/izGf6CfB81gnACfDlqO+8Bvv3kxN5FI8OYHKQj0KczyvZ8was/PNAL0BVCbmPAD7OkCj3O2abHnuAHkQcx9bGZyF8LvZNjJucNBoavzPs4aw/wBEXoEQFoDzj8AMM08DyB7sa9H91HbnHexoUkELFHV9I9sb5QpSG7bTu+UIHjIvoDmMYx70VN7v4LOKR9NkgrmBhF0CpOzIY+ln7YekT296FIqxOc9IpP3zTUTiOczUFmTqKkvLF/4qL8atE7Oddvr2fgRiP12UTPV4mBX/F5Xc7NPdq0yfn632jfJApKHc6+i/50OkhbGi0GOm+WGUU3EEsKhGrUDAT3zzD4vmvBjVhJZQZDQLE9CofQTYDYdBIRpw8zclpzCTJ4BjQrSaqb+IO0EACoxnoBUmPPbZabwLpHhP3ybfoBW7oGwjfn5+b5A9FnwWWOC/BHDb5YtKWbEhJQWG0T7l11E0qC8vFvRR9Cn/XzGz4RY+wnn1wetky/qoayRVVhYeC9z2/T09JeRiYmJAQltOuP96mBmJjZvaK9lixgCmJub82h+fv4/xDmUKQnwuVuj0R0bG/sc6K6C4vCZVjDo8RNkfKqERZhZrDmlpaXeq2/zFLPv4TxAOageTrqxWGwejA+CXqNmwKQc43H7MA/ojf1KiKB6mAQTZMyljf4JoI+Jb30C/pcjlZWVRN4lt2YCOjY1NeXAfM7k5KQzPj7uMVLT6Fvj90GmJaZpXs6TD01DPiSOMX8Ae+tEi094Z2tqavTlZOHCFzyJcuESaECLKfNLQEHpV6aZ1FQbRsngaZTnKae8vNwzW1lZWT1491ABAHIc4N6m2SLqXKjkXsRiPxlDhb0QdiuZEJA+8at4qwJTAzWCzx067nUA+IXURTOQuTMTIERH4g0gsJllqKj8NDZv1uz5fzTwjEPoBQxrRJPbcOlpXpg+FBkZGXFIo6OjztDQ0G/Dw8P3ieMVg1h3tFwLGCmmONzImhc8ayWa9rFsodbV0XOpOlGf18NxB6uqqvqxqVWiZwcoCe2doK+p45qmM0Pd9JnMm+O6HaDDWIuJ2fhF8KZt5hV5mipjSQhmt6MfEHvuRh76GWtd2LJplUpZD3oOgXAe32MvST75G2Hegvk3fN9An/TsNDY2etECx45AA+8QjBnafIuoYgA+j/5PzM9hnA+qxF6+NVtBd1n+chTafxxgrlZUVPiWsWF/ibBO2QP7dkLIKzioxfYmW0P282H4zAl+SYK+NT511/b/jLRBMGtD3wFgd4DpbSA65I3CIyJFGsEPoL8ADfIlPwPhF1fr7P8KMADJeuL1FblnhQAAAABJRU5ErkJggg==);
+}
+
+
+.operatebar image.data-v-6ea64c21 {
+	height: 56rpx;
+	width: 56rpx;
+	display: block;
+}
+.operatebar ._div.data-v-6ea64c21 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.operatebar .num.data-v-6ea64c21 {
+	width: 60rpx;
+	text-align: center;
+	font-size: 32rpx;
+	display: inline-block;
+	color: #010101;
+	vertical-align: middle;
+	color: #fc733b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 无任何数据的空布局 */
+.mescroll-empty {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	padding: 100rpx 50rpx;
+	text-align: center;
+}
+.mescroll-empty.empty-fixed {
+	z-index: 99;
+	position: absolute; /*transform会使fixed失效,最终会降级为absolute */
+	top: 100rpx;
+	left: 0;
+}
+.mescroll-empty .empty-icon {
+	width: 380rpx;
+	/* height: 280rpx; */
+}
+.mescroll-empty .empty-tip {
+	margin-top: 20rpx;
+	font-size: 26rpx;
+	color: #7a7a7a;
+}
+.mescroll-empty .empty-btn {
+	display: inline-block;
+	margin-top: 40rpx;
+	min-width: 200rpx;
+	padding: 18rpx;
+	font-size: 28rpx;
+	border: 1rpx solid #e04b28;
+	border-radius: 60rpx;
+	color: #e04b28;
+}
+.mescroll-empty .empty-btn:active {
+	opacity: 0.75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 回到顶部的按钮 */
+.mescroll-totop {
+	z-index: 9990;
+	position: fixed !important; /* 加上important避免编译到H5,在多mescroll中定位失效 */
+	right: 20rpx;
+	bottom: 120rpx;
+	width: 72rpx;
+	height: auto;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s; /* 过渡 */
+	margin-bottom: 0px; /* css变量 */
+}
+/* 适配 iPhoneX */
+.mescroll-safe-bottom{
+	margin-bottom: calc(0px + constant(safe-area-inset-bottom)); /* window-bottom + 适配 iPhoneX */
+	margin-bottom: calc(0px + env(safe-area-inset-bottom));
+}
+/* 显示 -- 淡入 */
+.mescroll-totop-in {
+	opacity: 1;
+}
+/* 隐藏 -- 淡出且不接收事件*/
+.mescroll-totop-out {
+	opacity: 0;
+	pointer-events: none;
+}
+
+page {
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
+}
+.mescroll-uni-warp{
+	height: 100%;
+}
+.mescroll-uni {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 200rpx;
+	overflow-y: auto;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
+}
+
+/* 定位的方式固定高度 */
+.mescroll-uni-fixed{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto; /* 使right生效 */
+	height: auto; /* 使bottom生效 */
+}
+
+/* 下拉刷新区域 */
+.mescroll-downwarp {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 下拉刷新--内容区,定位于区域底部 */
+.mescroll-downwarp .downwarp-content {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 60rpx;
+	padding: 20rpx 0;
+	text-align: center;
+}
+
+/* 下拉刷新--提示文本 */
+.mescroll-downwarp .downwarp-tip {
+	display: inline-block;
+	font-size: 28rpx;
+	vertical-align: middle;
+	margin-left: 16rpx;
+	/* color: gray; 已在style设置color,此处删去*/
+}
+
+/* 下拉刷新--旋转进度条 */
+.mescroll-downwarp .downwarp-progress {
+	display: inline-block;
+	width: 32rpx;
+	height: 32rpx;
+	border-radius: 50%;
+	border: 2rpx solid gray;
+	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
+	vertical-align: middle;
+}
+
+/* 旋转动画 */
+.mescroll-downwarp .mescroll-rotate {
+	-webkit-animation: mescrollDownRotate 0.6s linear infinite;
+	        animation: mescrollDownRotate 0.6s linear infinite;
+}
+@-webkit-keyframes mescrollDownRotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+@keyframes mescrollDownRotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+
+/* 上拉加载区域 */
+.mescroll-upwarp {
+	min-height: 60rpx;
+	padding: 30rpx 0;
+	text-align: center;
+	clear: both;
+}
+
+/*提示文本 */
+.mescroll-upwarp .upwarp-tip,
+.mescroll-upwarp .upwarp-nodata {
+	display: inline-block;
+	font-size: 28rpx;
+	vertical-align: middle;
+	/* color: gray; 已在style设置color,此处删去*/
+}
+.mescroll-upwarp .upwarp-tip {
+	margin-left: 16rpx;
+}
+
+/*旋转进度条 */
+.mescroll-upwarp .upwarp-progress {
+	display: inline-block;
+	width: 32rpx;
+	height: 32rpx;
+	border-radius: 50%;
+	border: 2rpx solid gray;
+	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
+	vertical-align: middle;
+}
+
+/* 旋转动画 */
+.mescroll-upwarp .mescroll-rotate {
+	-webkit-animation: mescrollUpRotate 0.6s linear infinite;
+	        animation: mescrollUpRotate 0.6s linear infinite;
+}
+@-webkit-keyframes mescrollUpRotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+@keyframes mescrollUpRotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+
