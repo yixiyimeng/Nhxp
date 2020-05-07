@@ -1,2 +1,1 @@
-<import src="./evaluate.vue.wxml" />
-    <template is="2b063905" data="{{ ...$root['0'], $root }}"/>
+<view class="pageview "><mescroll-uni vue-id="1" down="{{downOption}}" up="{{upOption}}" fixed="{{false}}" data-event-opts="{{[['^down',[['downCallback']]],['^up',[['upCallback']]],['^init',[['mescrollInit']]]]}}" bind:down="__e" bind:up="__e" bind:init="__e" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{10}}" wx:for-item="item" wx:for-index="index" wx:key="index"><evaluate-item vue-id="{{('2-'+index)+','+('1')}}" goodsinfo="{{item}}" bind:__l="__l"></evaluate-item></block></mescroll-uni></view>

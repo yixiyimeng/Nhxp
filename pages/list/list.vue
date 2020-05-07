@@ -107,6 +107,19 @@
 				</view>
 			</view>
 		</view>
+		<!-- 客服 -->
+		<view class="cu-modal bottom-modal" :class="isContact?'show':''">
+			<view class="cu-dialog bg-white">
+				<view class="cu-bar ">
+					<view class="action title">查看店铺</view>
+					<view class="action cuIcon-close" @tap="hideModal"></view>
+				</view>
+				<view class="action-list">
+					<view class="action-item">进入店铺</view>
+					<view class="action-item">查看评价</view>
+				</view>
+			</view>
+		</view>
 	</view>
 
 </template>

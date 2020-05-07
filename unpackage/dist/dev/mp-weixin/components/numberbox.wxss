@@ -1,0 +1,20 @@
+
+.operatebar image.data-v-e4238b26 {
+	height: 56rpx;
+	width: 56rpx;
+	display: block;
+}
+.operatebar ._div.data-v-e4238b26 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.operatebar .num.data-v-e4238b26 {
+	width: 60rpx;
+	text-align: center;
+	font-size: 32rpx;
+	display: inline-block;
+	color: #010101;
+	vertical-align: middle;
+	color: #fc733b;
+}
+

@@ -44,7 +44,6 @@
     "navigationBarTitleText": "花鲜派",
     "navigationBarTextStyle": "black"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#6b6b6b",
     "selectedColor": "#000",
@@ -82,5 +81,10 @@
         "text": "我的"
       }
     ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "mescroll-body": "/components/mescroll-uni/mescroll-body",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
   }
 }
