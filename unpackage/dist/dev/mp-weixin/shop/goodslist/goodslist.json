@@ -1,7 +1,4 @@
 {
-  "navigationBarTitleText": "产品管理",
-  "usingComponents": {
-    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
-    "cate": "/components/shop/cate"
-  }
+  "usingComponents": {},
+  "navigationBarTitleText": "产品管理"
 }

@@ -1,1 +1,2 @@
-<mescroll-body class="vue-ref" bind:init="__e" bind:down="__e" bind:up="__e" vue-id="1" data-ref="mescrollRef" data-event-opts="{{[['^init',[['mescrollInit']]],['^down',[['downCallback']]],['^up',[['upCallback']]]]}}" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{dataSource}}" wx:for-item="item" wx:for-index="index" wx:key="index"><articleitem vue-id="{{('2-'+index)+','+('1')}}" bind:__l="__l"></articleitem></block></mescroll-body>
+<import src="./article.vue.wxml" />
+    <template is="5925a823" data="{{ ...$root['0'], $root }}"/>

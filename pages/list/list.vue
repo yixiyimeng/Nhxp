@@ -1,17 +1,29 @@
 <template>
 	<view class="view-page flex flex-direction">
 		<view class="bg-white">
-			<searchbar></searchbar>
-			<view class="topbar flex align-center">
-				<view class="flex-sub">
-					<scroll-view scroll-x class=" nav  ">
-						<view class=" scrollview flex text-center">
-							<span v-for="(item,index) in menulist" :key="index" :class="{'active':index==0}">{{item}}</span>
-						</view>
-					</scroll-view>
+			<view class="bg-white" style="z-index: 999; position: relative;">
+				<searchbar></searchbar>
+				<view class="topbar flex align-center">
+					<view class="flex-sub">
+						<scroll-view scroll-x class=" nav  ">
+							<view class=" scrollview flex text-center">
+								<span v-for="(item,index) in menulist" :key="index" :class="{'active':index==0}">{{item}}</span>
+							</view>
+						</scroll-view>
+					</view>
+					<span class="line"></span>
+					<span class="arrow" @tap="isShowAllmenu=!isShowAllmenu"></span>
 				</view>
-				<span class="line"></span>
-				<span class="arrow"></span>
+			</view>
+			<view class="cu-modal top-modal" :class="isShowAllmenu?'show':''" @tap="isShowAllmenu=!isShowAllmenu">
+				<view class="cu-dialog  bg-white" @tap.stop="">
+					<view class="padding-lg">
+						<view class='cu-tag round bg-orange'>圆角</view>
+						<view class='cu-tag round'>圆角</view>
+						<view class='cu-tag round'>圆角</view>
+						<view class='cu-tag round'>圆角</view>
+					</view>
+				</view>
 			</view>
 			<view class="filterbar flex align-center">
 				<span class="active">默认</span>
@@ -29,6 +41,7 @@
 				</span>
 			</view>
 		</view>
+
 		<view class="flex-sub main">
 			<mescroll-uni :down="downOption" @down="downCallback" :up="upOption" @up="upCallback" @init="mescrollInit" :fixed="false">
 				<goodsitem class="goods-item" v-for="(item, index) in 10" :key="index" :goodsinfo="item" @showMail="showMail"
@@ -67,7 +80,7 @@
 			<view class="cu-dialog bg-white" @tap.stop="" style="padding-top: 20px;">
 				<!-- 关闭 -->
 				<view class="action cuIcon-close close" @tap="showDetails=false"></view>
-				<view class="mail-item" style="max-height: 20vh;overflow: auto;">
+				<view class="mail-item" style="max-height: 70vh;overflow: auto;">
 					<div class="flex align-center">
 						<div class="imgbox">
 							<image src="/static/demo/1.png" mode="widthFix"></image>
@@ -111,15 +124,48 @@
 		<view class="cu-modal bottom-modal" :class="isContact?'show':''">
 			<view class="cu-dialog bg-white">
 				<view class="cu-bar ">
-					<view class="action title">查看店铺</view>
-					<view class="action cuIcon-close" @tap="hideModal"></view>
+					<view class="action title">客服</view>
+					<view class="action cuIcon-close" @tap="isContact=!isContact"></view>
 				</view>
+
 				<view class="action-list">
-					<view class="action-item">进入店铺</view>
-					<view class="action-item">查看评价</view>
+					<view class="action-item weixin flex align-center">
+						<span>客服微信</span>
+						<span class="flex-sub">12233333</span>
+						<span class="copy" @tap="copy('122333')">复制</span>
+					</view>
+					<view class="action-item weixin flex align-center">
+						<span>客服微信</span>
+						<span class="flex-sub">12233333</span>
+						<span class="copy" @tap="copy('122333')">复制</span>
+					</view>
+					<button open-type="contact" class="action-item">
+						<view>在线客服</view>
+					</button>
 				</view>
 			</view>
 		</view>
+		<!-- 筛选 条件 -->
+		<view class="cu-modal drawer-modal justify-end" :class="isShowFilter?'show':''" @tap="isShowFilter=!isShowFilter">
+			<view class="cu-dialog basis-xl flex flex-direction bg-white " @tap.stop="">
+				<view class="flex-sub padding-lg">
+					<view>
+						<view>颜色</view>
+						<view class="margin-top-sm">
+							<view class='cu-tag radius bg-orange'>圆角</view>
+							<view class='cu-tag radius'>圆角</view>
+							<view class='cu-tag radius'>圆角</view>
+							<view class='cu-tag radius'>圆角</view>
+						</view>
+					</view>
+				</view>
+				<view class="filterftbar flex justify-center">
+					<span>重置</span>
+					<span>确定</span>
+				</view>
+			</view>
+		</view>
+
 	</view>
 
 </template>
@@ -135,6 +181,7 @@
 	export default {
 		data() {
 			return {
+				CustomBar: this.CustomBar,
 				cateIndex: 0,
 				menulist: ['全部', '玫瑰', '百合', '康乃馨', '梅花', '牡丹', '百合', '康乃馨', '梅花', '牡丹'],
 				showActionSheet: false,
@@ -148,9 +195,12 @@
 					text: "查看TA的口碑",
 					color: "#1a1a1a"
 				}],
-				showDetails: true, //
+				showDetails: false, //
 				isShowShop: false, //查看店铺
 				isShowReply: false, //查看评价
+				isContact: false, //查看客服
+				isShowFilter: false, //查看筛选条件
+				isShowAllmenu: true, //查看所有分类
 				emptyoption: {
 					icon: '/static/empty.png',
 					tip: '暂无产品评价'
@@ -189,7 +239,17 @@
 			},
 			buygoods() {
 				this.showDetails = true;
-			}
+			},
+			copy(value) {
+				uni.setClipboardData({
+					data: value,
+					success: function() {
+						console.log('success');
+					}
+				});
+			},
+
+
 		}
 	};
 </script>
@@ -292,10 +352,30 @@
 	.action-list {
 		.action-item {
 			color: #ff6202;
-			font-size: 26upx;
+			font-size: 28upx;
 			line-height: 140upx;
 			text-align: center;
+			padding: 0 75upx;
+			background: #fff;
 			border-top: 1px solid #eee;
+
+			&>span {
+				color: #000;
+
+				&.flex-sub {
+					text-align: center;
+				}
+
+				&.copy {
+					color: #ff6202;
+					border: 1px solid #ff6202;
+					height: 50upx;
+					width: 100upx;
+					line-height: 50upx;
+					border-radius: 100upx;
+					font-size: 24upx;
+				}
+			}
 		}
 	}
 
@@ -329,7 +409,8 @@
 			max-height: 300px;
 			overflow: auto;
 		}
-		.close{
+
+		.close {
 			position: absolute;
 			right: 56upx;
 			top: 30upx;
@@ -342,7 +423,7 @@
 		color: #9F9F9F;
 		padding: 40upx 50upx;
 		position: relative;
-	
+
 
 		.imgbox {
 			width: 200upx;
@@ -436,5 +517,45 @@
 			}
 
 		}
+	}
+
+	/* 筛选 */
+	.drawer-modal {
+		.title {
+			font-size: 30upx;
+			color: #000;
+		}
+
+		.cu-tag {
+			padding: 0 48upx;
+			height: 60upx;
+			margin: 20upx 10upx;
+		}
+
+		.filterftbar {
+			padding: 50upx 0;
+
+			span {
+				width: 150upx;
+				height: 60upx;
+				line-height: 60upx;
+				color: #fc743b;
+				border: 1px solid #fc743b;
+				border-radius: 10upx;
+				text-align: center;
+
+				&+span {
+					margin-left: 120upx;
+					color: #fff;
+					background-image: linear-gradient(90deg, #fe8c2d, #fe5504);
+				}
+			}
+		}
+	}
+
+	/* 所有分类 */
+	.top-modal {
+		top: 200upx;
+		z-index: 998;
 	}
 </style>

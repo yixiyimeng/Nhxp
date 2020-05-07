@@ -1,6 +1,4 @@
 {
-  "navigationBarTitleText": "订单记录",
-  "usingComponents": {
-    "order-item": "/components/shop/order-item"
-  }
+  "usingComponents": {},
+  "navigationBarTitleText": "订单记录"
 }

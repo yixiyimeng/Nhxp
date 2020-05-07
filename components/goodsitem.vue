@@ -17,7 +17,7 @@
 					<div>颜色：红色</div>
 					<div class="price">￥15.80</div>
 				</div>
-				<div class="flex justify-between align-end solid-top padding-top">
+				<div class="flex justify-between align-end solids-top padding-top">
 					<div class="num">
 						<div>库存：123</div>
 						<div class="margin-top-sm">销量：2354</div>

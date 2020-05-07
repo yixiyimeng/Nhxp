@@ -1,3 +1,51 @@
+.card {
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  margin: 0 26rpx 30rpx;
+  color: #000;
+}
+.card .card-bd {
+    padding: 30rpx 36rpx;
+}
+.card .name {
+    font-size: 28rpx;
+    font-weight: bold;
+    margin-right: 28rpx;
+}
+.card .addr {
+    width: 26rpx;
+    margin-right: 60rpx;
+}
+.card .arrow {
+    width: 17rpx;
+}
+.card .card-ft {
+    border-top: 1px solid #e5e5e5;
+    padding: 0 36rpx;
+    height: 65rpx;
+}
+.card .card-ft .round {
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7);
+}
+.card .card-ft image,
+    .card .card-ft text {
+      display: inline-block;
+      vertical-align: middle;
+}
+.card .card-ft .edit image {
+      width: 34rpx;
+      margin-right: 20rpx;
+}
+.card .card-ft .del {
+      margin-left: 26rpx;
+}
+.card .card-ft .del image {
+        width: 37rpx;
+        margin-right: 20rpx;
+}
+
 page,
 .pageview {
   height: 100%;

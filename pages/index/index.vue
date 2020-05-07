@@ -107,9 +107,7 @@
 					name: '平台公示'
 				}],
 				tabindex: 0,
-				goodslist:[{
-					tjtag
-				}]
+				goodslist:[]
 			};
 		},
 		mixins: [MescrollMixin],

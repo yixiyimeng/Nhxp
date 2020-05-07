@@ -1,2 +1,0 @@
-<view class="evaluate-item"><view class="title flex justify-between _div"><label class="_span">购买商：方德玫瑰</label><tui-rate vue-id="1" current="{{index}}" size="{{14}}" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" bind:__l="__l"></tui-rate></view><view class="info _div">玫瑰保护的很好，值得回购！送达时间快，接收
-		不便时还可以送到指定地点，花也是新鲜的。</view><view class="flex justify-between _div"><label class="_span">2020-03-01 11:00:50</label><label class="_span">订单号：abc147258369</label></view></view>

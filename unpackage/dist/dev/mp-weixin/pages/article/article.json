@@ -1,6 +1,4 @@
 {
-  "navigationBarTitleText": "平台公示",
-  "usingComponents": {
-    "articleitem": "/components/articleitem"
-  }
+  "usingComponents": {},
+  "navigationBarTitleText": "平台公示"
 }

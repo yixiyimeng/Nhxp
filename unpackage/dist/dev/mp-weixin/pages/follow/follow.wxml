@@ -1,1 +1,2 @@
-<view class="flex flex-direction pageview"><view class="topnav bg-white flex align-center justify-center"><label class="topnav-item active _span">产品</label><label class="topnav-item _span">店铺</label></view><view class="main flex-sub"></view></view>
+<import src="./follow.vue.wxml" />
+    <template is="61406ed6" data="{{ ...$root['0'], $root }}"/>

@@ -387,4 +387,21 @@
 			}
 		}
 	}
+	.cu-modal.top-modal::before {
+		vertical-align: top;
+	}
+	
+	.cu-modal.top-modal .cu-dialog {
+		width: 100%;
+		border-radius: 0;
+	}
+	
+	.cu-modal.top-modal {
+		margin-top: -1000upx;
+	}
+	
+	.cu-modal.top-modal.show {
+		margin-top: 0;
+	}
+	
 </style>
