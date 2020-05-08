@@ -17,7 +17,7 @@
 			</view>
 			<view class="cu-modal top-modal" :class="isShowAllmenu?'show':''" @tap="isShowAllmenu=!isShowAllmenu">
 				<view class="cu-dialog  bg-white" @tap.stop="">
-					<view class="padding-lg">
+					<view class="padding-sm">
 						<view class='cu-tag round bg-orange'>圆角</view>
 						<view class='cu-tag round'>圆角</view>
 						<view class='cu-tag round'>圆角</view>
@@ -266,7 +266,7 @@
 	.topbar {
 		height: 110upx;
 		position: relative;
-		border-bottom: 2upx solid #ededed;
+
 
 		&>.flex-sub {
 			width: 200rpx;
@@ -320,6 +320,7 @@
 
 	.filterbar {
 		height: 70upx;
+		border-top: 2upx solid #ededed;
 
 		&>span {
 			width: 25%;
@@ -555,7 +556,14 @@
 
 	/* 所有分类 */
 	.top-modal {
-		top: 200upx;
+		top: 180upx;
 		z-index: 998;
+
+		.cu-tag {
+			line-height: 62upx;
+			padding: 0 25upx;
+			margin: 10upx 15upx;
+			font-size: 28upx;
+		}
 	}
 </style>

@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
-	"appid": "wx5ca2585337f0f40e",
+	"appid": "touristappid",
 	"projectname": "Nhxp",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
@@ -38,9 +38,10 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "pages/list/list",
-					"pathName": "pages/list/list",
+					"id": 0,
+					"name": "pages/classify/classify",
+					"pathName": "pages/classify/classify",
+					"query": "",
 					"scene": null
 				}
 			]

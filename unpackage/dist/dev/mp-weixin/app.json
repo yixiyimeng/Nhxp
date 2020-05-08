@@ -14,7 +14,9 @@
     "pages/address/address",
     "pages/addaddr/addaddr",
     "pages/submitOrder/submitOrder",
-    "pages/follow/follow"
+    "pages/follow/follow",
+    "pages/classify/classify",
+    "pages/reply/reply"
   ],
   "subPackages": [
     {
@@ -82,6 +84,5 @@
         "text": "我的"
       }
     ]
-  },
-  "sitemapLocation": "sitemap19.json"
+  }
 }

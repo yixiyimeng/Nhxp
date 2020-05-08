@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///E:/张静项目/Nhxp/main.js"],"names":["Page","App"],"mappings":";;;;;;;;;;AAAA;AACA;AACI,qG;AACAA,IAAI,CAAC,+BAAYC,iBAAZ,CAAD,CAAJ,C","file":"shop/classify/classify.js","sourcesContent":["import 'uni-pages';\nimport pageFactory from 'mpvue-page-factory'\n    import App from './shop/classify/classify.vue'\n    Page(pageFactory(App))"],"sourceRoot":""}

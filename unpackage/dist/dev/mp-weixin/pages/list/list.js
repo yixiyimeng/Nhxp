@@ -461,7 +461,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("view", { staticClass: "padding-lg" }, [
+    return _c("view", { staticClass: "padding-sm" }, [
       _c("view", { staticClass: "cu-tag round bg-orange" }, [_vm._v("圆角")]),
       _c("view", { staticClass: "cu-tag round" }, [_vm._v("圆角")]),
       _c("view", { staticClass: "cu-tag round" }, [_vm._v("圆角")]),
@@ -916,57 +916,43 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "view",
-    { staticClass: "searchbar flex align-center" },
-    [
-      _vm._m(0),
-      _c("div", { staticClass: "flex-sub flex align-center" }, [
-        _vm._m(1),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.keyword,
-              expression: "keyword"
-            }
-          ],
-          staticClass: "flex-sub",
-          attrs: {
-            placeholder: "请输入你想要的产品名称",
-            "placeholder-style": "color:#B4B4B4",
-            type: "text",
-            "confirm-type": "search",
-            eventid: "43bf8001-0"
-          },
-          domProps: { value: _vm.keyword },
-          on: {
-            confirm: function($event) {
-              _vm.confirm($event)
-            },
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.keyword = $event.target.value
-            }
+  return _c("view", { staticClass: "searchbar flex align-center" }, [
+    _vm._m(0),
+    _c("div", { staticClass: "flex-sub flex align-center" }, [
+      _vm._m(1),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.keyword,
+            expression: "keyword"
           }
-        })
-      ]),
-      _c(
-        "button",
-        { staticClass: "contact", attrs: { "open-type": "contact" } },
-        [
-          _c("image", {
-            attrs: { src: "/static/icon20.png", mode: "widthFix" }
-          }),
-          _c("view", [_vm._v("客服")])
-        ]
-      )
-    ],
-    1
-  )
+        ],
+        staticClass: "flex-sub",
+        attrs: {
+          placeholder: "请输入你想要的产品名称",
+          "placeholder-style": "color:#B4B4B4",
+          type: "text",
+          "confirm-type": "search",
+          eventid: "43bf8001-0"
+        },
+        domProps: { value: _vm.keyword },
+        on: {
+          confirm: function($event) {
+            _vm.confirm($event)
+          },
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.keyword = $event.target.value
+          }
+        }
+      })
+    ]),
+    _vm._m(2)
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -985,6 +971,19 @@ var staticRenderFns = [
     return _c("div", { staticClass: "icon" }, [
       _c("image", { attrs: { src: "/static/icon21.png" } })
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "view",
+      { staticClass: "contact", attrs: { "open-type": "contact" } },
+      [
+        _c("image", { attrs: { src: "/static/icon20.png", mode: "widthFix" } }),
+        _c("view", [_vm._v("客服")])
+      ]
+    )
   }
 ]
 render._withStripped = true

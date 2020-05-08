@@ -2,8 +2,8 @@
 <import src="/components/shop/cate.vue.wxml" />
 <import src="/colorui/components/cu-custom.vue.wxml" />
 <import src="/components/shop/selectcate.vue.wxml" />
-<import src="/components/shop/evaluateItem.vue.wxml" />
 <import src="/components/shop/order-item.vue.wxml" />
+<import src="/components/shop/evaluateItem.vue.wxml" />
 
 <template name="M627423cf-default-627423cf-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'627423cf-0-'+index],$root}}" is="59b1855e" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 
@@ -21,7 +21,7 @@
 
 <template name="M59d7a4f6-content-59d7a4f6-0">我的钱包</template>
 
-<template name="M2b063905-default-2b063905-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'2b063905-0-'+index],$root}}" is="ca4d9b4a" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
-
 <template name="M79201482-default-79201482-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'79201482-0-'+index],$root}}" is="2d617901" wx:for="{{5}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="M2b063905-default-2b063905-1"><template wx:key="index" data="{{...$root['0'], ...$root[$kk+'2b063905-0-'+index],$root}}" is="ca4d9b4a" wx:for="{{10}}" wx:for-index="index" wx:for-item="item"></template></template>
 

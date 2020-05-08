@@ -265,7 +265,6 @@ page,
 .topbar {
   height: 110rpx;
   position: relative;
-  border-bottom: 2rpx solid #ededed;
 }
 .topbar > .flex-sub {
     width: 200rpx;
@@ -308,6 +307,7 @@ page,
 }
 .filterbar {
   height: 70rpx;
+  border-top: 2rpx solid #ededed;
 }
 .filterbar > ._span {
     width: 25%;
@@ -499,7 +499,13 @@ page,
 }
 /* 所有分类 */
 .top-modal {
-  top: 200rpx;
+  top: 180rpx;
   z-index: 998;
+}
+.top-modal .cu-tag {
+    line-height: 62rpx;
+    padding: 0 25rpx;
+    margin: 10rpx 15rpx;
+    font-size: 28rpx;
 }
 

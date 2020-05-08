@@ -11,10 +11,10 @@
 			<input class="flex-sub" v-model="keyword" placeholder="请输入你想要的产品名称" placeholder-style="color:#B4B4B4" type="text"
 			 confirm-type="search" @confirm="confirm($event)" />
 		</div>
-		<button open-type="contact" class="contact">
+		<view open-type="contact" class="contact">
 			<image src="/static/icon20.png" mode="widthFix"></image>
 			<view>客服</view>
-		</button>
+		</view>
 	</view>
 </template>
 

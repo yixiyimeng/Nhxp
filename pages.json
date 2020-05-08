@@ -67,6 +67,16 @@
 			"style": {
 				"navigationBarTitleText": "关注"
 			}
+		}, {
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		}, {
+			"path": "pages/reply/reply",
+			"style": {
+				"navigationBarTitleText": "产品评价"
+			}
 		}
 	],
 
@@ -163,6 +173,7 @@
 					"navigationBarTitleText": "订单详情"
 				}
 			}
+
 		]
 	}],
 	"globalStyle": {
