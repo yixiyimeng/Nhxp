@@ -85,7 +85,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.card {
 		border-radius: 30upx;
 		position: relative;

@@ -1,0 +1,85 @@
+.shopinfo.data-v-213fc910 {
+  background: #fff;
+  font-size: 24rpx;
+  color: #8d8d8d;
+}
+.shopinfo.card.data-v-213fc910 {
+    border-radius: 30rpx;
+    border-top: none;
+    padding: 35rpx 20rpx;
+}
+.shopinfo .imgbox.data-v-213fc910 {
+    height: 130rpx;
+    margin-right: 50rpx;
+    width: 130rpx;
+}
+.shopinfo .imgbox image.data-v-213fc910 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+}
+.shopinfo .name.data-v-213fc910 {
+    color: #000;
+    font-size: 30rpx;
+}
+.shopinfo .tag.data-v-213fc910 {
+    color: #fff;
+    background: #e60012;
+    line-height: 25rpx;
+    height: 25rpx;
+    display: inline-block;
+    padding: 0 10rpx;
+    border-radius: 5rpx;
+    font-size: 16rpx;
+    margin-right: 20rpx;
+}
+.shopinfo .btn.data-v-213fc910 {
+    color: #fff;
+    font-size: 26rpx;
+    width: 150rpx;
+    line-height: 60rpx;
+    border-radius: 15rpx;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fe8c2d), to(#fe5504));
+    background-image: -o-linear-gradient(left, #fe8c2d, #fe5504);
+    background-image: linear-gradient(90deg, #fe8c2d, #fe5504);
+}
+.shopinfo .num.data-v-213fc910 {
+    font-size: 26rpx;
+    color: #c9c9c9;
+    margin-left: 10rpx;
+}
+.shopinfo .goodslist.data-v-213fc910 {
+    padding-right: 50rpx;
+    position: relative;
+    text-align: center;
+}
+.shopinfo .goodslist.data-v-213fc910:before {
+      position: absolute;
+      top: 0;
+      right: 10rpx;
+      bottom: 0;
+      display: block;
+      margin: auto;
+      width: 30rpx;
+      height: 30rpx;
+      color: #8799a3;
+      content: "\E6A3";
+      text-align: center;
+      font-size: 34rpx;
+      font-family: cuIcon;
+      line-height: 30rpx;
+}
+.shopinfo .goodslist .goods-item.data-v-213fc910 {
+      color: #e60012;
+      font-size: 22rpx;
+      width: 22%;
+}
+.shopinfo .goodslist .goods-item image.data-v-213fc910 {
+        width: 100%;
+}
+.shopinfo .goodslist .goods-item + .goods-item.data-v-213fc910 {
+        margin-left: 4%;
+}
+

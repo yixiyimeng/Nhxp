@@ -1,0 +1,49 @@
+
+.app-tabs{
+	position: relative;
+	height: 75rpx;
+	line-height: 60rpx;
+	font-size: 30rpx;
+	background-color: #fff;
+	padding-bottom: 15rpx;
+	/* border-bottom: 1rpx solid #eee; */
+}
+.app-tabs .tabs-item{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+}
+.app-tabs .tabs-item .tab-item{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.app-tabs .tabs-item .active{
+	color: #fc723a;
+}
+.app-tabs .tabs-line{
+	position: absolute;
+	bottom: 15rpx;
+	width: 65rpx;
+	height: 4rpx;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	border-radius: 4rpx;
+	-webkit-transition: left .3s;
+	-o-transition: left .3s;
+	transition: left .3s;
+	background: #fc723a;
+}
+/*悬浮*/
+.app-tabs.tabs-fixed{
+	z-index: 9999;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	width: 100%;
+}
+

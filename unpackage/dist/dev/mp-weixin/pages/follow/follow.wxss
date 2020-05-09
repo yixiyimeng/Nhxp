@@ -2,11 +2,24 @@ page,
 .pageview {
   height: 100%;
   width: 100%;
+  background: #f0f0f0;
   overflow: hidden;
 }
 page .tabbar,
   .pageview .tabbar {
     -webkit-box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
             box-shadow: 0 -5rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+page .list,
+  .pageview .list {
+    padding: 0 25rpx 20rpx;
+}
+page .list .goodsinfo, page .list .shopinfo, .pageview .list .goodsinfo, .pageview .list .shopinfo {
+      margin-bottom: 20rpx;
+}
+page .main,
+  .pageview .main {
+    overflow: auto;
+    margin-top: 20rpx;
 }
 

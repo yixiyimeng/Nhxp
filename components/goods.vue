@@ -69,7 +69,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.goodsinfo {
 		background: #fff;
 		color: #000;

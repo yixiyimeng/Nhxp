@@ -1,0 +1,24 @@
+.cmtreply {
+  text-align: left;
+  line-height: 48rpx;
+  color: #000;
+  margin-bottom: 20rpx;
+}
+.cmtreply .imgbox {
+    height: 64rpx;
+    width: 64rpx;
+    border-radius: 100%;
+    overflow: hidden;
+    background: #535353;
+    margin-right: 25rpx;
+}
+.cmtreply .tui-cmt-time {
+    font-size: 20rpx;
+    color: #adadad;
+    margin-top: 10rpx;
+    line-height: 24rpx;
+}
+.cmtreply .imglist image {
+    width: 30%;
+}
+

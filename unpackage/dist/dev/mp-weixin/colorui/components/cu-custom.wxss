@@ -1,0 +1,8 @@
+
+.nobg{
+		color: #fff;
+}
+.bg-green{
+		background: #19A967;
+}
+

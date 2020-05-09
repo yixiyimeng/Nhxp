@@ -4795,173 +4795,176 @@ scroll-view.cu-steps .cu-item {
 .cuIcon-btn:before {
 	content: "\E601";
 }
+image{
+	height: auto;
+}
 page {
-	height: 100%;
-	background: #fff;
+		height: 100%;
+		background: #fff;
 }
 button::after {
-	border: none;
+		border: none;
 }
 .nav-list {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	padding: 0px 40rpx 0px;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		padding: 0px 40rpx 0px;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 }
 .nav-li {
-	padding: 30rpx;
-	border-radius: 12rpx;
-	width: 45%;
-	margin: 0 2.5% 40rpx;
-	background-image: url(https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358352-assets/web-upload/cc3b1807-c684-4b83-8f80-80e5b8a6b975.png);
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	z-index: 1;
+		padding: 30rpx;
+		border-radius: 12rpx;
+		width: 45%;
+		margin: 0 2.5% 40rpx;
+		background-image: url(https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358352-assets/web-upload/cc3b1807-c684-4b83-8f80-80e5b8a6b975.png);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
 }
 .nav-li::after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	background-color: inherit;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	bottom: -10%;
-	border-radius: 10rpx;
-	opacity: 0.2;
-	-webkit-transform: scale(0.9, 0.9);
-	    -ms-transform: scale(0.9, 0.9);
-	        transform: scale(0.9, 0.9);
+		content: '';
+		position: absolute;
+		z-index: -1;
+		background-color: inherit;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		bottom: -10%;
+		border-radius: 10rpx;
+		opacity: 0.2;
+		-webkit-transform: scale(0.9, 0.9);
+		    -ms-transform: scale(0.9, 0.9);
+		        transform: scale(0.9, 0.9);
 }
 .nav-li.cur {
-	color: #fff;
-	background: rgb(94, 185, 94);
-	-webkit-box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
-	        box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
+		color: #fff;
+		background: rgb(94, 185, 94);
+		-webkit-box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
+		        box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
 }
 .nav-title {
-	font-size: 32rpx;
-	font-weight: 300;
+		font-size: 32rpx;
+		font-weight: 300;
 }
 .nav-title::first-letter {
-	font-size: 40rpx;
-	margin-right: 4rpx;
+		font-size: 40rpx;
+		margin-right: 4rpx;
 }
 .nav-name {
-	font-size: 28rpx;
-	text-transform: Capitalize;
-	margin-top: 20rpx;
-	position: relative;
+		font-size: 28rpx;
+		text-transform: Capitalize;
+		margin-top: 20rpx;
+		position: relative;
 }
 .nav-name::before {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40rpx;
-	height: 6rpx;
-	background: #fff;
-	bottom: 0;
-	right: 0;
-	opacity: 0.5;
+		content: '';
+		position: absolute;
+		display: block;
+		width: 40rpx;
+		height: 6rpx;
+		background: #fff;
+		bottom: 0;
+		right: 0;
+		opacity: 0.5;
 }
 .nav-name::after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 100rpx;
-	height: 1px;
-	background: #fff;
-	bottom: 0;
-	right: 40rpx;
-	opacity: 0.3;
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100rpx;
+		height: 1px;
+		background: #fff;
+		bottom: 0;
+		right: 40rpx;
+		opacity: 0.3;
 }
 .nav-name::first-letter {
-	font-weight: bold;
-	font-size: 36rpx;
-	margin-right: 1px;
+		font-weight: bold;
+		font-size: 36rpx;
+		margin-right: 1px;
 }
 .nav-li text {
-	position: absolute;
-	right: 30rpx;
-	top: 30rpx;
-	font-size: 52rpx;
-	width: 60rpx;
-	height: 60rpx;
-	text-align: center;
-	line-height: 60rpx;
+		position: absolute;
+		right: 30rpx;
+		top: 30rpx;
+		font-size: 52rpx;
+		width: 60rpx;
+		height: 60rpx;
+		text-align: center;
+		line-height: 60rpx;
 }
 .text-light {
-	font-weight: 300;
+		font-weight: 300;
 }
 @keyframes show {
 0% {
-		-webkit-transform: translateY(-50px);
-		        transform: translateY(-50px);
+			-webkit-transform: translateY(-50px);
+			        transform: translateY(-50px);
 }
 60% {
-		-webkit-transform: translateY(40rpx);
-		        transform: translateY(40rpx);
+			-webkit-transform: translateY(40rpx);
+			        transform: translateY(40rpx);
 }
 100% {
-		-webkit-transform: translateY(0px);
-		        transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			        transform: translateY(0px);
 }
 }
 @-webkit-keyframes show {
 0% {
-		-webkit-transform: translateY(-50px);
-		        transform: translateY(-50px);
+			-webkit-transform: translateY(-50px);
+			        transform: translateY(-50px);
 }
 60% {
-		-webkit-transform: translateY(40rpx);
-		        transform: translateY(40rpx);
+			-webkit-transform: translateY(40rpx);
+			        transform: translateY(40rpx);
 }
 100% {
-		-webkit-transform: translateY(0px);
-		        transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			        transform: translateY(0px);
 }
 }
 .text-orange {
-	color: #fc743c;
+		color: #fc743c;
 }
 .submitBtn,
-.cancelBtn,
-.defaultBtn {
-	color: #fff;
-	text-align: center;
-	border-radius: 14rpx;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fb9549), to(#fc733b));
-	background-image: -o-linear-gradient(#fb9549, #fc733b);
-	background-image: linear-gradient(#fb9549, #fc733b);
-	line-height: 100rpx;
-	font-size: 32rpx;
-	display: block;
+	.cancelBtn,
+	.defaultBtn {
+		color: #fff;
+		text-align: center;
+		border-radius: 14rpx;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fb9549), to(#fc733b));
+		background-image: -o-linear-gradient(#fb9549, #fc733b);
+		background-image: linear-gradient(#fb9549, #fc733b);
+		line-height: 100rpx;
+		font-size: 32rpx;
+		display: block;
 }
 .cancelBtn {
-	background: #f0f0f0;
-	color: #fc743c;
+		background: #f0f0f0;
+		color: #fc743c;
 }
 .defaultBtn {
-	background: #d5d5d5;
+		background: #d5d5d5;
 }
 .text-red {
-	color: #e03d3e;
+		color: #e03d3e;
 }
 .modalbtn {
-	color: #fff;
-	font-size: 30rpx;
-	line-height: 100rpx;
-	text-align: center;
-	background: #fc743c;
+		color: #fff;
+		font-size: 30rpx;
+		line-height: 100rpx;
+		text-align: center;
+		background: #fc743c;
 }
 
 @charset "UTF-8";
@@ -5063,140 +5066,5 @@ button::after {
 }
 .cu-modal.top-modal.show {
   margin-top: 0;
-}
-
-page {
-	-webkit-overflow-scrolling: touch; /* 使iOS滚动流畅 */
-}
-.mescroll-body {
-	position: relative; /* 下拉刷新区域相对自身定位 */
-	height: auto; /* 不可固定高度,否则overflow: hidden, 可通过设置最小高度使列表不满屏仍可下拉*/
-	overflow: hidden; /* 遮住顶部下拉刷新区域 */
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box; /* 避免设置padding出现双滚动条的问题 */
-}
-
-/* 下拉刷新区域 */
-.mescroll-downwarp {
-	position: absolute;
-	top: -100%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-}
-
-/* 下拉刷新--内容区,定位于区域底部 */
-.mescroll-downwarp .downwarp-content {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	min-height: 60rpx;
-	padding: 20rpx 0;
-	text-align: center;
-}
-
-/* 下拉刷新--提示文本 */
-.mescroll-downwarp .downwarp-tip {
-	display: inline-block;
-	font-size: 28rpx;
-	vertical-align: middle;
-	margin-left: 16rpx;
-	/* color: gray; 已在style设置color,此处删去*/
-}
-
-/* 下拉刷新--旋转进度条 */
-.mescroll-downwarp .downwarp-progress {
-	display: inline-block;
-	width: 32rpx;
-	height: 32rpx;
-	border-radius: 50%;
-	border: 2rpx solid gray;
-	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
-	vertical-align: middle;
-}
-
-/* 旋转动画 */
-.mescroll-downwarp .mescroll-rotate {
-	-webkit-animation: mescrollDownRotate 0.6s linear infinite;
-	        animation: mescrollDownRotate 0.6s linear infinite;
-}
-@-webkit-keyframes mescrollDownRotate {
-0% {
-		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
-}
-100% {
-		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
-}
-}
-@keyframes mescrollDownRotate {
-0% {
-		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
-}
-100% {
-		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
-}
-}
-
-/* 上拉加载区域 */
-.mescroll-upwarp {
-	min-height: 60rpx;
-	padding: 30rpx 0;
-	text-align: center;
-	clear: both;
-}
-
-/*提示文本 */
-.mescroll-upwarp .upwarp-tip,
-.mescroll-upwarp .upwarp-nodata {
-	display: inline-block;
-	font-size: 28rpx;
-	vertical-align: middle;
-	/* color: gray; 已在style设置color,此处删去*/
-}
-.mescroll-upwarp .upwarp-tip {
-	margin-left: 16rpx;
-}
-
-/*旋转进度条 */
-.mescroll-upwarp .upwarp-progress {
-	display: inline-block;
-	width: 32rpx;
-	height: 32rpx;
-	border-radius: 50%;
-	border: 2rpx solid gray;
-	border-bottom-color: transparent !important; /*已在style设置border-color,此处需加 !important*/
-	vertical-align: middle;
-}
-
-/* 旋转动画 */
-.mescroll-upwarp .mescroll-rotate {
-	-webkit-animation: mescrollUpRotate 0.6s linear infinite;
-	        animation: mescrollUpRotate 0.6s linear infinite;
-}
-@-webkit-keyframes mescrollUpRotate {
-0% {
-		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
-}
-100% {
-		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
-}
-}
-@keyframes mescrollUpRotate {
-0% {
-		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
-}
-100% {
-		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
-}
 }
 

@@ -1,0 +1,85 @@
+.card.data-v-2ec893b0 {
+  border-radius: 30rpx;
+  position: relative;
+  overflow: hidden;
+  padding: 35rpx 20rpx;
+  background: #fff;
+  margin: 0 20rpx 20rpx;
+  color: #000;
+}
+.card .shopnum.data-v-2ec893b0 {
+    color: #e53f3f;
+    font-size: 30rpx;
+}
+.card .tjtag.data-v-2ec893b0 {
+    position: absolute;
+    left: 30rpx;
+    top: 0;
+    height: 58rpx;
+    width: 58rpx;
+    border-radius: 0 20rpx 0 20rpx;
+    color: #fff;
+    font-size: 16rpx;
+    padding: 10rpx;
+    background: #e60012;
+    z-index: 99;
+    text-align: center;
+}
+.card .tjtag.tjtag1.data-v-2ec893b0 {
+      background: #917bdd;
+}
+.card .name.data-v-2ec893b0 {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.card .oldprice.data-v-2ec893b0 {
+    color: #b5b8c1;
+    font-size: 24rpx;
+    text-decoration: line-through;
+}
+.card .imgbox.data-v-2ec893b0 {
+    width: 191rpx;
+    height: 191rpx;
+    margin-right: 35rpx;
+}
+.card .imgbox image.data-v-2ec893b0 {
+      height: 100%;
+      width: 100%;
+      display: block;
+}
+.card .num.data-v-2ec893b0 {
+    color: #b3b6be;
+    font-size: 24rpx;
+}
+.card .price.data-v-2ec893b0 {
+    color: #e03d3e;
+    font-size: 38rpx;
+    font-weight: bold;
+}
+.card .buybtn.data-v-2ec893b0 {
+    color: #fc733b;
+    font-size: 30rpx;
+    height: 60rpx;
+    width: 150rpx;
+    border-radius: 16rpx;
+    border: 2rpx solid #fc733b;
+    text-align: center;
+    line-height: 60rpx;
+}
+.card .buybtn text.data-v-2ec893b0,
+    .card .buybtn image.data-v-2ec893b0 {
+      vertical-align: middle;
+}
+.card .buybtn image.data-v-2ec893b0 {
+      margin-left: 14rpx;
+      width: 18rpx;
+}
+.card .buybtn.open.data-v-2ec893b0 {
+      color: #fff;
+      background: #ff0000;
+      border: 2rpx solid #ff0000;
+}
+.goodsinfo + .goodsinfo.data-v-2ec893b0 {
+  margin-top: 20rpx;
+}
+

@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "searchbar": "/components/searchbar",
+    "goodsitem": "/components/goodsitem",
+    "tui-actionsheet": "/components/actionsheet/actionsheet",
+    "numberbox": "/components/numberbox",
+    "cmt-reply": "/components/cmt-reply",
+    "mescroll-empty": "/components/mescroll-uni/components/mescroll-empty"
+  }
 }

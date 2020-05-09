@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "关注"
+  "navigationBarTitleText": "关注",
+  "usingComponents": {
+    "app-tabs": "/components/app-tabs",
+    "favgoods": "/components/favgoods",
+    "favshop": "/components/favshop"
+  }
 }

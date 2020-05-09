@@ -1,1 +1,0 @@
-<import src="/components/mescroll-uni/mescroll-uni.vue.wxml" /><template name="694d76d9"><template binddown="handleProxy" bindup="handleProxy" bindinit="handleProxy" data-eventid="{{'694d76d9-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'694d76d9-0'],$root, $slotdefault:'data-v-2cf5ed02-default-694d76d9-0'}}" is="5c2d2d45"></template></template>

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "我的评价"
+  "navigationBarTitleText": "我的评价",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "evaluate-item": "/components/shop/evaluateItem"
+  }
 }

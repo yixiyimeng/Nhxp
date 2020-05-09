@@ -77,6 +77,11 @@
 			"style": {
 				"navigationBarTitleText": "产品评价"
 			}
+		}, {
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
 		}
 	],
 

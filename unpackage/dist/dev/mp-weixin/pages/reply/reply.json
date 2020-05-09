@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "产品评价"
+  "navigationBarTitleText": "产品评价",
+  "usingComponents": {
+    "tui-rate": "/components/rate/rate",
+    "cmt-reply": "/components/cmt-reply"
+  }
 }

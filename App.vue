@@ -116,7 +116,9 @@
 <style>
 	@import 'colorui/main.css';
 	@import 'colorui/icon.css';
-
+image{
+	height: auto;
+}
 	page {
 		height: 100%;
 		background: #fff;
